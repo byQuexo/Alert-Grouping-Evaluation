@@ -1,0 +1,589 @@
+ID,SUBJECT,MESSAGE
+1,Unavailable by ICMP ping: PROBLEM for 10.116.156.108,"[PROBLEM: Disaster]
+Host: 10.116.156.108 (10.116.156.108)
+Name: Unavailable by ICMP ping
+Event: 40774274, Trigger: 28759
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:07:08 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: SWLONS
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40774274
+"
+2,Unavailable by ICMP ping: PROBLEM for FW-WL,"[PROBLEM: High]
+Host: FW-WL (172.20.20.1)
+Name: Unavailable by ICMP ping
+Event: 40774427, Trigger: 160465
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:08:20 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: FW-WL
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40774427
+"
+3,Health Check State Failed to FW_NA on member 2: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: Health Check State Failed to FW_NA on member 2
+Event: 40774972, Trigger: 163788
+Description: 
+Problem started at 01:09:51 on 2024.02.19
+Problem name: Health Check State Failed to FW_NA on member 2
+Host: FW-DC
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40774972
+"
+4,Health Check State Failed to FW_NA on member 3: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: Health Check State Failed to FW_NA on member 3
+Event: 40774973, Trigger: 163789
+Description: 
+Problem started at 01:09:51 on 2024.02.19
+Problem name: Health Check State Failed to FW_NA on member 3
+Host: FW-DC
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40774973
+"
+5,VPN Tunnel Down [ADM 73 - 10.122.96.0/17]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 73 - 10.122.96.0/17]
+Event: 40776532, Trigger: 163805
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 73 - 10.122.96.0/17]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776532
+"
+6,VPN Tunnel Down [ADM 74 - 10.122.0.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 74 - 10.122.0.0/20]
+Event: 40776534, Trigger: 163807
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 74 - 10.122.0.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776534
+"
+7,VPN Tunnel Down [ADM 74 - 10.122.96.0/17]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 74 - 10.122.96.0/17]
+Event: 40776535, Trigger: 163808
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 74 - 10.122.96.0/17]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776535
+"
+8,VPN Tunnel Down [TAHITI - 10.116.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [TAHITI - 10.116.0.0/16]
+Event: 40776536, Trigger: 163809
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [TAHITI - 10.116.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776536
+"
+9,VPN Tunnel Down [TAHITI - 10.122.96.0/17]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [TAHITI - 10.122.96.0/17]
+Event: 40776538, Trigger: 163811
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [TAHITI - 10.122.96.0/17]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776538
+"
+10,VPN Tunnel Down [TAHITI - 10.122.0.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [TAHITI - 10.122.0.0/20]
+Event: 40776537, Trigger: 163810
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [TAHITI - 10.122.0.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776537
+"
+11,Unavailable by ICMP ping: PROBLEM for 172.20.71.5,"[PROBLEM: High]
+Host: 172.20.71.5 (172.20.71.5)
+Name: Unavailable by ICMP ping
+Event: 40776672, Trigger: 170498
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:12:09 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: ILO-SRP-TA-E01-001
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40776672
+"
+12,MSSQL: Service is unavailable: PROBLEM for RES-PA-W01-002_SQL-PA-W01-002,"[PROBLEM: Disaster]
+Host: RES-PA-W01-002_SQL-PA-W01-002 (10.122.1.70)
+Name: MSSQL: Service is unavailable
+Event: 40779421, Trigger: 137123
+Description: The TCP port of the MS SQL Server service is currently unavailable.
+Problem started at 01:16:51 on 2024.02.19
+Problem name: MSSQL: Service is unavailable
+Host: RES-PA-W01-002_SQL-PA-W01-002 (Stats)
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40779421
+"
+13,MSSQL: Service is unavailable: PROBLEM for RES-PA-W01-001_SQL-PA-W01-001,"[PROBLEM: Disaster]
+Host: RES-PA-W01-001_SQL-PA-W01-001 (10.122.1.69)
+Name: MSSQL: Service is unavailable
+Event: 40779425, Trigger: 176627
+Description: The TCP port of the MS SQL Server service is currently unavailable.
+Problem started at 01:17:02 on 2024.02.19
+Problem name: MSSQL: Service is unavailable
+Host: RES-PA-W01-001_SQL-PA-W01-001 (Prod)
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40779425
+"
+14,Unavailable by ICMP ping: PROBLEM for 10.122.21.137,"[PROBLEM: High]
+Host: 10.122.21.137 (10.122.21.137)
+Name: Unavailable by ICMP ping
+Event: 40779594, Trigger: 153933
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:19:06 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: VISIO_CLICKSHARE_LILLE_SEBASTOPOL
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40779594
+"
+15,Unavailable by ICMP ping: PROBLEM for IDRAC-SRP-LO-W02-001,"[PROBLEM: High]
+Host: IDRAC-SRP-LO-W02-001 (10.116.156.109)
+Name: Unavailable by ICMP ping
+Event: 40774294, Trigger: 172013
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:07:16 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: IDRAC-SRP-LO-W02-001
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40774294
+"
+16,MSSQL: Service is unavailable: PROBLEM for RES-PA-W01-003_SQL-PA-W01-003,"[PROBLEM: Disaster]
+Host: RES-PA-W01-003_SQL-PA-W01-003 (10.122.1.71)
+Name: MSSQL: Service is unavailable
+Event: 40774318, Trigger: 177019
+Description: The TCP port of the MS SQL Server service is currently unavailable.
+Problem started at 01:07:37 on 2024.02.19
+Problem name: MSSQL: Service is unavailable
+Host: RES-PA-W01-003_SQL-PA-W01-003 (Query)
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40774318
+"
+17,Health Check State Failed to FW_PA on member 2: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: Health Check State Failed to FW_PA on member 2
+Event: 40774339, Trigger: 163792
+Description: 
+Problem started at 01:07:51 on 2024.02.19
+Problem name: Health Check State Failed to FW_PA on member 2
+Host: FW-DC
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40774339
+"
+18,Health Check State Failed to FW_PA on member 3: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: Health Check State Failed to FW_PA on member 3
+Event: 40774340, Trigger: 163793
+Description: 
+Problem started at 01:07:51 on 2024.02.19
+Problem name: Health Check State Failed to FW_PA on member 3
+Host: FW-DC
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40774340
+"
+19,Unavailable by ICMP ping: PROBLEM for 10.122.21.132,"[PROBLEM: High]
+Host: 10.122.21.132 (10.122.21.132)
+Name: Unavailable by ICMP ping
+Event: 40774496, Trigger: 153945
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:09:10 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: VISIO_LIFESIZE_LILLE_SEBASTOPOL
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40774496
+"
+20,Unavailable by ICMP ping: PROBLEM for IDRAC-SRP-PA-E01-003,"[PROBLEM: High]
+Host: IDRAC-SRP-PA-E01-003 (172.20.31.13)
+Name: Unavailable by ICMP ping
+Event: 40775371, Trigger: 172397
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:10:20 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: IDRAC-SRP-PA-E01-003
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775371
+"
+21,Unavailable by ICMP ping: PROBLEM for 172.20.31.14,"[PROBLEM: High]
+Host: 172.20.31.14 (172.20.31.14)
+Name: Unavailable by ICMP ping
+Event: 40775372, Trigger: 172431
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:10:21 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: IDRAC-SRP-PA-E01-004
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775372
+"
+22,VPN Tunnel Down [ADM 70 - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 70 - 172.16.0.0/16]
+Event: 40776539, Trigger: 170123
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 70 - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776539
+"
+23,VPN Tunnel Down [ADM 71 - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 71 - 172.16.0.0/16]
+Event: 40776540, Trigger: 170124
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 71 - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776540
+"
+24,VPN Tunnel Down [ADM 72 - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 72 - 172.16.0.0/16]
+Event: 40776541, Trigger: 170125
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 72 - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776541
+"
+25,VPN Tunnel Down [ADM 74 - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 74 - 172.16.0.0/16]
+Event: 40776543, Trigger: 170127
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 74 - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776543
+"
+26,VPN Tunnel Down [ADM 73 - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 73 - 172.16.0.0/16]
+Event: 40776542, Trigger: 170126
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 73 - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776542
+"
+27,VPN Tunnel Down [TAHITI - 172.16.0.0/16]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [TAHITI - 172.16.0.0/16]
+Event: 40776544, Trigger: 170128
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [TAHITI - 172.16.0.0/16]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776544
+"
+28,VPN Tunnel Down [ADM 70 -10.122.16.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 70 -10.122.16.0/20]
+Event: 40776545, Trigger: 170738
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 70 -10.122.16.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776545
+"
+29,VPN Tunnel Down [ADM 72 -10.122.16.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 72 -10.122.16.0/20]
+Event: 40776547, Trigger: 170740
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 72 -10.122.16.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776547
+"
+30,VPN Tunnel Down [TAHITI - 10.122.16.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [TAHITI - 10.122.16.0/20]
+Event: 40776550, Trigger: 170743
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [TAHITI - 10.122.16.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776550
+"
+31,VPN Tunnel Down [EOS JIRA NET]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [EOS JIRA NET]
+Event: 40776551, Trigger: 173123
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [EOS JIRA NET]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776551
+"
+32,Unavailable by ICMP ping: PROBLEM for FW-TA,"[PROBLEM: High]
+Host: FW-TA (172.20.70.1)
+Name: Unavailable by ICMP ping
+Event: 40779548, Trigger: 173488
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:18:36 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: FW-TA
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40779548
+"
+33,Unavailable by ICMP ping: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: Unavailable by ICMP ping
+Event: 40779620, Trigger: 163764
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:19:21 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: FW-DC
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40779620
+"
+34,Unavailable by ICMP ping: PROBLEM for Sonde Temperature Nantes,"[PROBLEM: High]
+Host: Sonde Temperature Nantes (172.16.44.16)
+Name: Unavailable by ICMP ping
+Event: 40780144, Trigger: 32343
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:19:28 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: Sonde Temperature Nantes
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40780144
+"
+35,Unavailable by ICMP ping: PROBLEM for Sonde Temperature Lons,"[PROBLEM: High]
+Host: Sonde Temperature Lons (172.16.64.16)
+Name: Unavailable by ICMP ping
+Event: 40780145, Trigger: 32351
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:19:29 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: Sonde Temperature Lons
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40780145
+"
+36,VPN Tunnel Down [VPN1]: PROBLEM for FW-PA,"[PROBLEM: High]
+Host: FW-PA (172.20.30.1)
+Name: VPN Tunnel Down [VPN1]
+Event: 40779859, Trigger: 160487
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:18:24 on 2024.02.19
+Problem name: VPN Tunnel Down [VPN1]
+Host: FW-PA
+Severity: High
+Operational data: 1
+Original problem ID: 40779859
+"
+37,VPN Tunnel Down [VPN2]: PROBLEM for FW-PA,"[PROBLEM: High]
+Host: FW-PA (172.20.30.1)
+Name: VPN Tunnel Down [VPN2]
+Event: 40779860, Trigger: 160488
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:18:24 on 2024.02.19
+Problem name: VPN Tunnel Down [VPN2]
+Host: FW-PA
+Severity: High
+Operational data: 1
+Original problem ID: 40779860
+"
+38,Unavailable by ICMP ping: PROBLEM for 172.20.40.4,"[PROBLEM: Disaster]
+Host: 172.20.40.4 (172.20.40.4)
+Name: Unavailable by ICMP ping
+Event: 40779867, Trigger: 164889
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:18:42 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: SW-NA-01
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40779867
+"
+39,Unavailable by ICMP ping: PROBLEM for 172.20.20.2,"[PROBLEM: Disaster]
+Host: 172.20.20.2 (172.20.20.2)
+Name: Unavailable by ICMP ping
+Event: 40774952, Trigger: 156852
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:09:15 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: SW-WL-01
+Severity: Disaster
+Operational data: Down (0)
+Original problem ID: 40774952
+"
+40,Unavailable by ICMP ping: OK for Sonde Temperature Nantes,"[OK: High]
+Host: Sonde Temperature Nantes (172.16.44.16)
+Name: Unavailable by ICMP ping
+Event: 40775327, Trigger: 32343
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:09:28 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: Sonde Temperature Nantes
+Severity: High
+Operational data: Up (1)
+Original problem ID: 40775327
+"
+41,Unavailable by ICMP ping: OK for Sonde Temperature Lons,"[OK: High]
+Host: Sonde Temperature Lons (172.16.64.16)
+Name: Unavailable by ICMP ping
+Event: 40775146, Trigger: 32351
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:07:29 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: Sonde Temperature Lons
+Severity: High
+Operational data: Up (1)
+Original problem ID: 40775146
+"
+42,Unavailable by ICMP ping: PROBLEM for FW-LO,"[PROBLEM: High]
+Host: FW-LO (172.20.50.1)
+Name: Unavailable by ICMP ping
+Event: 40775149, Trigger: 160402
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:07:19 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: FW-LO
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775149
+"
+43,Unavailable by ICMP ping: PROBLEM for FW-PA,"[PROBLEM: High]
+Host: FW-PA (172.20.30.1)
+Name: Unavailable by ICMP ping
+Event: 40775339, Trigger: 160444
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:10:16 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: FW-PA
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775339
+"
+44,Unavailable by ICMP ping: PROBLEM for IDRAC-SRP-PA-E01-001,"[PROBLEM: High]
+Host: IDRAC-SRP-PA-E01-001 (172.20.31.11)
+Name: Unavailable by ICMP ping
+Event: 40775343, Trigger: 172238
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:10:18 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: IDRAC-SRP-PA-E01-001
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775343
+"
+45,Unavailable by ICMP ping: PROBLEM for IDRAC-SRP-PA-E01-002,"[PROBLEM: High]
+Host: IDRAC-SRP-PA-E01-002 (172.20.31.12)
+Name: Unavailable by ICMP ping
+Event: 40775370, Trigger: 172353
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:10:19 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: IDRAC-SRP-PA-E01-002
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40775370
+"
+46,VPN Tunnel Down [ADM 74 -10.122.16.0/20]: PROBLEM for FW-DC,"[PROBLEM: High]
+Host: FW-DC (192.168.200.1)
+Name: VPN Tunnel Down [ADM 74 -10.122.16.0/20]
+Event: 40776549, Trigger: 170742
+Description: IPsec VPN Tunnel Phase 2 is down, please check!
+Problem started at 01:11:21 on 2024.02.19
+Problem name: VPN Tunnel Down [ADM 74 -10.122.16.0/20]
+Host: FW-DC
+Severity: High
+Operational data: 1
+Original problem ID: 40776549
+"
+47,Unavailable by ICMP ping: PROBLEM for 10.116.149.70,"[PROBLEM: High]
+Host: 10.116.149.70 (10.116.149.70)
+Name: Unavailable by ICMP ping
+Event: 40779939, Trigger: 154898
+Description: Last three attempts returned timeout.  Please check device connectivity.
+Problem started at 01:19:05 on 2024.02.19
+Problem name: Unavailable by ICMP ping
+Host: VISIO_CLICKSHARE_NANTES_GRASLIN
+Severity: High
+Operational data: Down (0)
+Original problem ID: 40779939
+"
+48,Health Check State Failed to DC on member 3: PROBLEM for FW-PA,"[PROBLEM: High]
+Host: FW-PA (172.20.30.1)
+Name: Health Check State Failed to DC on member 3
+Event: 40779659, Trigger: 160485
+Description: 
+Problem started at 01:16:52 on 2024.02.19
+Problem name: Health Check State Failed to DC on member 3
+Host: FW-PA
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40779659
+"
+49,Health Check State Failed to DC on member 4: PROBLEM for FW-PA,"[PROBLEM: High]
+Host: FW-PA (172.20.30.1)
+Name: Health Check State Failed to DC on member 4
+Event: 40779660, Trigger: 160486
+Description: 
+Problem started at 01:16:52 on 2024.02.19
+Problem name: Health Check State Failed to DC on member 4
+Host: FW-PA
+Severity: High
+Operational data: Status: Alarm (1)
+Original problem ID: 40779660
+"

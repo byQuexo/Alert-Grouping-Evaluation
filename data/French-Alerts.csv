@@ -1,0 +1,390 @@
+ID,SUBJECT,MESSAGE
+1,Indisponible par ping ICMP : PROBLÈME pour 10.116.156.108,"[PROBLÈME : Désastre]
+Hôte : 10.116.156.108 (10.116.156.108)
+Nom : Indisponible par ping ICMP
+Événement : 40774274, Déclencheur : 28759
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : SWLONS
+Gravité : Désastre
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774274
+"
+2,Indisponible par ping ICMP : PROBLÈME pour FW-WL,"[PROBLÈME : Élevé]
+Hôte : FW-WL (172.20.20.1)
+Nom : Indisponible par ping ICMP
+Événement : 40774275, Déclencheur : 28760
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : FW-WL
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774275
+"
+3,Échec de l'état de vérification de santé pour FW_NA sur le membre 2,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Échec de l'état de vérification de santé pour FW_NA sur le membre 2
+Événement : 40774276, Déclencheur : 28761
+Description : La vérification de santé a échoué pour le membre 2. Veuillez vérifier l'état du membre.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Échec de l'état de vérification de santé pour FW_NA sur le membre 2
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Échec (1)
+ID du problème original : 40774276
+"
+4,Échec de l'état de vérification de santé pour FW_NA sur le membre 3,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Échec de l'état de vérification de santé pour FW_NA sur le membre 3
+Événement : 40774277, Déclencheur : 28762
+Description : La vérification de santé a échoué pour le membre 3. Veuillez vérifier l'état du membre.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Échec de l'état de vérification de santé pour FW_NA sur le membre 3
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Échec (1)
+ID du problème original : 40774277
+"
+5,Tunnel VPN hors service [ADM 73 - 10.122.96.0/17] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 73 - 10.122.96.0/17]
+Événement : 40774278, Déclencheur : 28763
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 73 - 10.122.96.0/17]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774278
+"
+6,Tunnel VPN hors service [ADM 74 - 10.122.0.0/20] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 74 - 10.122.0.0/20]
+Événement : 40774279, Déclencheur : 28764
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 74 - 10.122.0.0/20]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774279
+"
+7,Tunnel VPN hors service [ADM 74 - 10.122.96.0/17] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 74 - 10.122.96.0/17]
+Événement : 40774280, Déclencheur : 28765
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 74 - 10.122.96.0/17]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774280
+"
+8,Tunnel VPN hors service [TAHITI - 10.116.0.0/16] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [TAHITI - 10.116.0.0/16]
+Événement : 40774281, Déclencheur : 28766
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [TAHITI - 10.116.0.0/16]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774281
+"
+9,Tunnel VPN hors service [TAHITI - 10.122.96.0/17] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [TAHITI - 10.122.96.0/17]
+Événement : 40774282, Déclencheur : 28767
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [TAHITI - 10.122.96.0/17]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774282
+"
+10,Tunnel VPN hors service [TAHITI - 10.122.0.0/20] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [TAHITI - 10.122.0.0/20]
+Événement : 40774283, Déclencheur : 28768
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [TAHITI - 10.122.0.0/20]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774283
+"
+11,Indisponible par ping ICMP : PROBLÈME pour 172.20.71.5,"[PROBLÈME : Élevé]
+Hôte : 172.20.71.5 (172.20.71.5)
+Nom : Indisponible par ping ICMP
+Événement : 40774284, Déclencheur : 28769
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : 172.20.71.5
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774284
+"
+12,MSSQL : Service indisponible : PROBLÈME pour RES-PA-W01-002_SQL-01,"[PROBLÈME : Désastre]
+Hôte : RES-PA-W01-002_SQL-01 (192.168.200.2)
+Nom : MSSQL : Service indisponible
+Événement : 40774285, Déclencheur : 28770
+Description : Le service MSSQL est indisponible. Veuillez vérifier l'état du service.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : MSSQL : Service indisponible
+Hôte : RES-PA-W01-002_SQL-01
+Gravité : Désastre
+Données opérationnelles : Indisponible (1)
+ID du problème original : 40774285
+"
+13,MSSQL : Service indisponible : PROBLÈME pour RES-PA-W01-001_SQL-01,"[PROBLÈME : Désastre]
+Hôte : RES-PA-W01-001_SQL-01 (192.168.200.1)
+Nom : MSSQL : Service indisponible
+Événement : 40774286, Déclencheur : 28771
+Description : Le service MSSQL est indisponible. Veuillez vérifier l'état du service.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : MSSQL : Service indisponible
+Hôte : RES-PA-W01-001_SQL-01
+Gravité : Désastre
+Données opérationnelles : Indisponible (1)
+ID du problème original : 40774286
+"
+14,Indisponible par ping ICMP : PROBLÈME pour 10.122.21.137,"[PROBLÈME : Élevé]
+Hôte : 10.122.21.137 (10.122.21.137)
+Nom : Indisponible par ping ICMP
+Événement : 40774287, Déclencheur : 28772
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : 10.122.21.137
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774287
+"
+15,Indisponible par ping ICMP : PROBLÈME pour IDRAC-SRP-LO-W02-001,"[PROBLÈME : Élevé]
+Hôte : IDRAC-SRP-LO-W02-001 (192.168.200.3)
+Nom : Indisponible par ping ICMP
+Événement : 40774288, Déclencheur : 28773
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : IDRAC-SRP-LO-W02-001
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774288
+"
+16,MSSQL : Service indisponible : PROBLÈME pour RES-PA-W01-003_SQL-01,"[PROBLÈME : Désastre]
+Hôte : RES-PA-W01-003_SQL-01 (192.168.200.4)
+Nom : MSSQL : Service indisponible
+Événement : 40774289, Déclencheur : 28774
+Description : Le service MSSQL est indisponible. Veuillez vérifier l'état du service.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : MSSQL : Service indisponible
+Hôte : RES-PA-W01-003_SQL-01
+Gravité : Désastre
+Données opérationnelles : Indisponible (1)
+ID du problème original : 40774289
+"
+17,Échec de l'état de vérification de santé pour FW_PA sur le membre 2,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Échec de l'état de vérification de santé pour FW_PA sur le membre 2
+Événement : 40774290, Déclencheur : 28775
+Description : La vérification de santé a échoué pour le membre 2. Veuillez vérifier l'état du membre.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Échec de l'état de vérification de santé pour FW_PA sur le membre 2
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Échec (1)
+ID du problème original : 40774290
+"
+18,Échec de l'état de vérification de santé pour FW_PA sur le membre 3,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Échec de l'état de vérification de santé pour FW_PA sur le membre 3
+Événement : 40774291, Déclencheur : 28776
+Description : La vérification de santé a échoué pour le membre 3. Veuillez vérifier l'état du membre.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Échec de l'état de vérification de santé pour FW_PA sur le membre 3
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Échec (1)
+ID du problème original : 40774291
+"
+19,Indisponible par ping ICMP : PROBLÈME pour 10.122.21.132,"[PROBLÈME : Élevé]
+Hôte : 10.122.21.132 (10.122.21.132)
+Nom : Indisponible par ping ICMP
+Événement : 40774292, Déclencheur : 28777
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : 10.122.21.132
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774292
+"
+20,Indisponible par ping ICMP : PROBLÈME pour IDRAC-SRP-PA-E01-003,"[PROBLÈME : Élevé]
+Hôte : IDRAC-SRP-PA-E01-003 (192.168.200.5)
+Nom : Indisponible par ping ICMP
+Événement : 40774293, Déclencheur : 28778
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : IDRAC-SRP-PA-E01-003
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774293
+"
+21,Indisponible par ping ICMP : PROBLÈME pour 172.20.31.14,"[PROBLÈME : Élevé]
+Hôte : 172.20.31.14 (172.20.31.14)
+Nom : Indisponible par ping ICMP
+Événement : 40774294, Déclencheur : 28779
+Description : Les trois dernières tentatives ont abouti à un délai d'attente. Veuillez vérifier la connectivité de l'appareil.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Indisponible par ping ICMP
+Hôte : 172.20.31.14
+Gravité : Élevé
+Données opérationnelles : Arrêt (0)
+ID du problème original : 40774294
+"
+22,Tunnel VPN hors service [ADM 70 - 172.16.0.0/16] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 70 - 172.16.0.0/16]
+Événement : 40774295, Déclencheur : 28780
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 70 - 172.16.0.0/16]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774295
+"
+23,Tunnel VPN hors service [ADM 71 - 172.16.0.0/16] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 71 - 172.16.0.0/16]
+Événement : 40774296, Déclencheur : 28781
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 71 - 172.16.0.0/16]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774296
+"
+24,Tunnel VPN hors service [ADM 72 - 172.16.0.0/16] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 72 - 172.16.0.0/16]
+Événement : 40774297, Déclencheur : 28782
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 72 - 172.16.0.0/16]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774297
+"
+25,Tunnel VPN hors service [ADM 74 - 172.16.0.0/16] : PROBLÈME,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Tunnel VPN hors service [ADM 74 - 172.16.0.0/16]
+Événement : 40774298, Déclencheur : 28783
+Description : Le tunnel VPN est hors service. Veuillez vérifier la connectivité du tunnel.
+Problème commencé à 01:07:08 le 2024.02.19
+Nom du problème : Tunnel VPN hors service [ADM 74 - 172.16.0.0/16]
+Hôte : FW-DC
+Gravité : Élevé
+Données opérationnelles : Hors service (1)
+ID du problème original : 40774298
+"
+26,VPN Tunnel Down [ADM 73 - 172.16.0.0/16]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+27,VPN Tunnel Down [TAHITI - 172.16.0.0/16]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+28,VPN Tunnel Down [ADM 70 -10.122.16.0/20]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+29,VPN Tunnel Down [ADM 72 -10.122.16.0/20]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+30,VPN Tunnel Down [TAHITI - 10.122.16.0/20]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+31,VPN Tunnel Down [EOS JIRA NET]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+32,Indisponible par ping ICMP : PROBLÈME pour FW-TA,"[PROBLÈME : Élevé]
+Hôte : FW-TA (172.20.70.1)
+Nom : Indisponible par ping ICMP
+..."
+33,Indisponible par ping ICMP : PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+Nom : Indisponible par ping ICMP
+..."
+34,Indisponible par ping ICMP : PROBLÈME pour Sonde Température Nantes,"[PROBLÈME : Élevé]
+Hôte : Sonde Température Nantes (172.20.60.1)
+Nom : Indisponible par ping ICMP
+..."
+35,Indisponible par ping ICMP : PROBLÈME pour Sonde Température Lons,"[PROBLÈME : Élevé]
+Hôte : Sonde Température Lons (172.20.60.2)
+Nom : Indisponible par ping ICMP
+..."
+36,VPN Tunnel Down [VPN1]: PROBLÈME pour FW-PA,"[PROBLÈME : Élevé]
+Hôte : FW-PA (172.20.30.1)
+Nom : VPN Tunnel Down [VPN1]
+..."
+37,VPN Tunnel Down [VPN2]: PROBLÈME pour FW-PA,"[PROBLÈME : Élevé]
+Hôte : FW-PA (172.20.30.1)
+Nom : VPN Tunnel Down [VPN2]
+..."
+38,Indisponible par ping ICMP : PROBLÈME pour 172.20.40.4,"[PROBLÈME : Désastre]
+Hôte : 172.20.40.4 (172.20.40.4)
+Nom : Indisponible par ping ICMP
+..."
+39,Indisponible par ping ICMP : PROBLÈME pour 172.20.20.2,"[PROBLÈME : Désastre]
+Hôte : 172.20.20.2 (172.20.20.2)
+Nom : Indisponible par ping ICMP
+..."
+40,Indisponible par ping ICMP : OK pour Sonde Température Nantes,"[OK : Élevé]
+Hôte : Sonde Température Nantes (172.20.60.1)
+Nom : Indisponible par ping ICMP
+..."
+41,Indisponible par ping ICMP : OK pour Sonde Température Lons,"[OK : Élevé]
+Hôte : Sonde Température Lons (172.20.60.2)
+Nom : Indisponible par ping ICMP
+..."
+42,Indisponible par ping ICMP : PROBLÈME pour FW-LO,"[PROBLÈME : Élevé]
+Hôte : FW-LO (172.20.50.1)
+Nom : Indisponible par ping ICMP
+..."
+43,Indisponible par ping ICMP : PROBLÈME pour FW-PA,"[PROBLÈME : Élevé]
+Hôte : FW-PA (172.20.30.1)
+Nom : Indisponible par ping ICMP
+..."
+44,Indisponible par ping ICMP : PROBLÈME pour IDRAC-SRP-PA-E01-001,"[PROBLÈME : Élevé]
+Hôte : IDRAC-SRP-PA-E01-001 (172.20.30.10)
+Nom : Indisponible par ping ICMP
+..."
+45,Indisponible par ping ICMP : PROBLÈME pour IDRAC-SRP-PA-E01-002,"[PROBLÈME : Élevé]
+Hôte : IDRAC-SRP-PA-E01-002 (172.20.30.11)
+Nom : Indisponible par ping ICMP
+..."
+46,VPN Tunnel Down [ADM 74 -10.122.16.0/20]: PROBLÈME pour FW-DC,"[PROBLÈME : Élevé]
+Hôte : FW-DC (192.168.200.1)
+..."
+47,Indisponible par ping ICMP : PROBLÈME pour 10.116.149.70,"[PROBLÈME : Élevé]
+Hôte : 10.116.149.70 (10.116.149.70)
+Nom : Indisponible par ping ICMP
+..."
+48,Health Check State Failed to DC on member 3: PROBLÈME pour FW-PA,"[PROBLÈME : Élevé]
+Hôte : FW-PA (172.20.30.1)
+Nom : Health Check State Failed to DC on member 3
+..."
+49,Health Check State Failed to DC on member 4: PROBLÈME pour FW-PA,"[PROBLÈME : Élevé]
+Hôte : FW-PA (172.20.30.1)
+Nom : Health Check State Failed to DC on member 4
+..."
