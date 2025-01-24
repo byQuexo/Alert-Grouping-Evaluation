@@ -31,6 +31,7 @@ class BaseModel(ABC):
 
     def create_embedding(self, text) -> list[float]:
         try:
+            logger.info(f"Creating embedding for text: {text[:30]}")
             return self.model.encode(text, convert_to_tensor=True, precision="float32").tolist()
         except Exception as e:
             logger.error(f"Error creating embedding: {e}")
