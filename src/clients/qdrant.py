@@ -1,6 +1,5 @@
 from qdrant_client import QdrantClient
 
-
 class Qdrant:
     def __init__(self, service, config):
         self.service  = service

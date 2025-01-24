@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 .idea/
+src/models/_cache/
 
 # C extensions
 *.so

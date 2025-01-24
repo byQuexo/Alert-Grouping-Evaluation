@@ -1,10 +1,35 @@
+import os
+from loguru import logger
+from sentence_transformers import SentenceTransformer
+from abc import ABC
 
-class BaseModel:
-    def __init__(self, name: str, path: str):
-        self.name = name
-        self.path = path
+
+class BaseModel(ABC):
+    """Abstract base class for all embedding models."""
+
+    def __init__(self, service, config):
+        self.service = service
+        self.config = config
+        self.name = None
+        self.model_path = None
+        self.model = None
+
+    def setup(self):
+        try:
+            if not os.path.exists(self.model_path):
+                self.model = SentenceTransformer(self.name, trust_remote_code=True)
+                self.model.save_pretrained(self.model_path)
+                logger.info(f"Download for Model {self.name} completed.")
+            else:
+                self.model = SentenceTransformer(self.model_path, trust_remote_code=True)
+        except Exception as e:
+            logger.error(f"Error setting up model: {e}")
+            raise e
 
 
-    def create_embeddings(self, text):
-        raise NotImplementedError
-
+    def create_embedding(self, text) -> list[float]:
+        try:
+            return self.model.encode(text, convert_to_tensor=True, precision="float32").tolist()
+        except Exception as e:
+            logger.error(f"Error creating embedding: {e}")
+            raise e

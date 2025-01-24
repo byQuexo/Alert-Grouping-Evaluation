@@ -1,9 +1,10 @@
-from src.service import Service
+import os
+from src import Service
 
+os.environ['SENTENCE_TRANSFORMERS_HOME'] = 'src/models/_cache'
 
 def main():
-    service = Service()
-    service.run()
+    Service().run()
 
 if __name__ == '__main__':
     main()
