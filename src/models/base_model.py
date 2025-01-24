@@ -18,12 +18,8 @@ class BaseModel(ABC):
 
     def setup(self):
         try:
-            if not os.path.exists(self.model_path):
-                self.model = SentenceTransformer(self.name, trust_remote_code=True, device=self.device)
-                self.model.save_pretrained(self.model_path)
-                logger.info(f"Download for Model {self.name} completed.")
-            else:
-                self.model = SentenceTransformer(self.model_path, trust_remote_code=True, device=self.device)
+            self.model = SentenceTransformer(self.name, trust_remote_code=True, device=self.device)
+            logger.success(f"Model setup for {self.name} completed.")
         except Exception as e:
             logger.error(f"Error setting up model: {e}")
             raise e
