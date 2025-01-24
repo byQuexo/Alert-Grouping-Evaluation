@@ -5,7 +5,7 @@ class Qdrant:
         self.service  = service
         self.config = config
         self.client = QdrantClient(
-            host=self.config['QDRANT_HOST'],
-            port=self.config['QDRANT_PORT'],
+            host=self.config['QDRANT']['HOST'],
+            port=self.config['QDRANT']['PORT'],
         )
-    
+
