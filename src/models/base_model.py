@@ -18,7 +18,7 @@ class BaseModel(ABC):
 
     def setup(self):
         try:
-            self.model = SentenceTransformer(self.name, trust_remote_code=True, device=self.device)
+            self.model = SentenceTransformer(model_name_or_path=self.name, cache_folder=config["CACHE_DIR"], trust_remote_code=True, device=self.device)
             logger.success(f"Model setup for {self.name} completed.")
         except Exception as e:
             logger.error(f"Error setting up model: {e}")

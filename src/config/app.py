@@ -4,7 +4,7 @@ class App:
             "HOST": "localhost",
             "PORT": 6333,
         },
-        "MODELS_PATH": "src/models/_cache",
+        "CACHE_DIR": "src/models/_cache",
         "QDRANT_COLLECTION_DIM": 768,
     }
 
