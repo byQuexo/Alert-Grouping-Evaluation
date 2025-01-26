@@ -6,6 +6,7 @@ from sympy.strategies.branch import debug
 
 from src.data import DataManager
 from src.evaluation.metrics import Metrics
+from src.evaluation.metrics_display import MetricsDisplay
 from src.models import *
 from src.clients import Qdrant
 from src.config import App
@@ -55,6 +56,12 @@ class Service:
 
             self._pretty_print_metrics()
 
+            self._create_overall_metric()
+
+            self._show_overall_metrics()
+
+
+
         except Exception as e:
             logger.error(e)
             raise e
@@ -68,6 +75,25 @@ class Service:
                 for key, value in metrics.items():
                     logger.info(f"{key}: {value}")
 
+
+    def _create_overall_metric(self):
+        try:
+            for key, value in self.metrics.items():
+                self.metrics[key]["overall"] = Metrics.create_overall_metrics(key, self.metrics[key])
+
+        except Exception as e:
+            logger.error(e)
+
+
+    def _show_overall_metrics(self):
+        overall_metrics_list = []
+
+        for key, value in self.metrics.items():
+            overall_metrics_list.append(value["overall"])
+
+        metrics_display = MetricsDisplay(overall_metrics_list)
+        metrics_display.display_metrics()
+
     def _create_metric(self, model, language):
         try:
             groups = []
@@ -78,7 +104,6 @@ class Service:
             for _, row in self.data_manager.validation_data.iterrows():
                 validation.append([int(id) for id in row['IDs'].replace("'", "").split(",")])
 
-            # Convert the group ids to a list and add to the groups list
             for group_ids in self.groups[model][language].values():
                 groups.append(group_ids)
 
