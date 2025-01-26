@@ -1,6 +1,5 @@
 from typing import Dict, List
 from collections import defaultdict
-from huggingface_hub import create_collection
 from src.data import DataManager
 from src.models import *
 from src.clients import Qdrant
