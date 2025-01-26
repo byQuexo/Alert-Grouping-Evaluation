@@ -2,8 +2,8 @@ ID,SUBJECT,MESSAGE
 1,No disponible por ping ICMP: PROBLEMA para 10.116.156.108,"[PROBLEMA: Desastre]
 Host: 10.116.156.108 (10.116.156.108)
 Nombre: No disponible por ping ICMP
-Evento: 40774274, Disparador: 28759
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+Evento: 40774274, Trigger: 28759
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
 El problema comenzó a las 01:07:08 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
 Host: SWLONS
@@ -14,312 +14,576 @@ ID del problema original: 40774274
 2,No disponible por ping ICMP: PROBLEMA para FW-WL,"[PROBLEMA: Alto]
 Host: FW-WL (172.20.20.1)
 Nombre: No disponible por ping ICMP
-Evento: 40774275, Disparador: 28760
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40774427, Trigger: 160465
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:08:20 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
 Host: FW-WL
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774275
+ID del problema original: 40774427
 "
-3,Estado de verificación de salud fallido para FW_NA en el miembro 2,"[PROBLEMA: Alto]
+3,Estado de verificación de salud fallido para FW_NA en el miembro 2: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
-Nombre: Estado de verificación de salud fallido para FW_NA
-Evento: 40774276, Disparador: 28761
-Descripción: La verificación de salud falló para FW_NA en el miembro 2.
-El problema comenzó a las 01:07:08 el 2024.02.19
-Nombre del problema: Estado de verificación de salud fallido para FW_NA
+Nombre: Estado de verificación de salud fallido para FW_NA en el miembro 2
+Evento: 40774972, Trigger: 163788
+Descripción: 
+El problema comenzó a las 01:09:51 el 2024.02.19
+Nombre del problema: Estado de verificación de salud fallido para FW_NA en el miembro 2
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Fallido (0)
-ID del problema original: 40774276
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40774972
 "
-4,Estado de verificación de salud fallido para FW_NA en el miembro 3,"[PROBLEMA: Alto]
+4,Estado de verificación de salud fallido para FW_NA en el miembro 3: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
-Nombre: Estado de verificación de salud fallido para FW_NA
-Evento: 40774277, Disparador: 28762
-Descripción: La verificación de salud falló para FW_NA en el miembro 3.
-El problema comenzó a las 01:07:08 el 2024.02.19
-Nombre del problema: Estado de verificación de salud fallido para FW_NA
+Nombre: Estado de verificación de salud fallido para FW_NA en el miembro 3
+Evento: 40774973, Trigger: 163789
+Descripción: 
+El problema comenzó a las 01:09:51 el 2024.02.19
+Nombre del problema: Estado de verificación de salud fallido para FW_NA en el miembro 3
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Fallido (0)
-ID del problema original: 40774277
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40774973
 "
-5,Túnel VPN caído [ADM 73 - 10.122.96.0/17]: PROBLEMA,"[PROBLEMA: Alto]
+5,Túnel VPN caído [ADM 73 - 10.122.96.0/17]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 73 - 10.122.96.0/17]
-Evento: 40774278, Disparador: 28763
-Descripción: El túnel VPN [ADM 73 - 10.122.96.0/17] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776532, Trigger: 163805
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 73 - 10.122.96.0/17]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774278
+Datos operativos: 1
+ID del problema original: 40776532
 "
-6,Túnel VPN caído [ADM 74 - 10.122.0.0/20]: PROBLEMA,"[PROBLEMA: Alto]
+6,Túnel VPN caído [ADM 74 - 10.122.0.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 74 - 10.122.0.0/20]
-Evento: 40774279, Disparador: 28764
-Descripción: El túnel VPN [ADM 74 - 10.122.0.0/20] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776534, Trigger: 163807
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 74 - 10.122.0.0/20]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774279
+Datos operativos: 1
+ID del problema original: 40776534
 "
-7,Túnel VPN caído [ADM 74 - 10.122.96.0/17]: PROBLEMA,"[PROBLEMA: Alto]
+7,Túnel VPN caído [ADM 74 - 10.122.96.0/17]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 74 - 10.122.96.0/17]
-Evento: 40774280, Disparador: 28765
-Descripción: El túnel VPN [ADM 74 - 10.122.96.0/17] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776535, Trigger: 163808
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 74 - 10.122.96.0/17]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774280
+Datos operativos: 1
+ID del problema original: 40776535
 "
-8,Túnel VPN caído [TAHITI - 10.116.0.0/16]: PROBLEMA,"[PROBLEMA: Alto]
+8,Túnel VPN caído [TAHITI - 10.116.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [TAHITI - 10.116.0.0/16]
-Evento: 40774281, Disparador: 28766
-Descripción: El túnel VPN [TAHITI - 10.116.0.0/16] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776536, Trigger: 163809
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [TAHITI - 10.116.0.0/16]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774281
+Datos operativos: 1
+ID del problema original: 40776536
 "
-9,Túnel VPN caído [TAHITI - 10.122.96.0/17]: PROBLEMA,"[PROBLEMA: Alto]
+9,Túnel VPN caído [TAHITI - 10.122.96.0/17]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [TAHITI - 10.122.96.0/17]
-Evento: 40774282, Disparador: 28767
-Descripción: El túnel VPN [TAHITI - 10.122.96.0/17] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776538, Trigger: 163811
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [TAHITI - 10.122.96.0/17]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774282
+Datos operativos: 1
+ID del problema original: 40776538
 "
-10,Túnel VPN caído [TAHITI - 10.122.0.0/20]: PROBLEMA,"[PROBLEMA: Alto]
+10,Túnel VPN caído [TAHITI - 10.122.0.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [TAHITI - 10.122.0.0/20]
-Evento: 40774283, Disparador: 28768
-Descripción: El túnel VPN [TAHITI - 10.122.0.0/20] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776537, Trigger: 163810
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [TAHITI - 10.122.0.0/20]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774283
+Datos operativos: 1
+ID del problema original: 40776537
 "
 11,No disponible por ping ICMP: PROBLEMA para 172.20.71.5,"[PROBLEMA: Alto]
 Host: 172.20.71.5 (172.20.71.5)
 Nombre: No disponible por ping ICMP
-Evento: 40774284, Disparador: 28769
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776672, Trigger: 170498
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:12:09 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
-Host: 172.20.71.5
+Host: ILO-SRP-TA-E01-001
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774284
+ID del problema original: 40776672
 "
-12,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-002_SQL-01,"[PROBLEMA: Desastre]
-Host: RES-PA-W01-002_SQL-01 (192.168.200.2)
+12,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-002_SQL-PA-W01-002,"[PROBLEMA: Desastre]
+Host: RES-PA-W01-002_SQL-PA-W01-002 (10.122.1.70)
 Nombre: MSSQL: Servicio no disponible
-Evento: 40774285, Disparador: 28770
-Descripción: El servicio MSSQL no está disponible en RES-PA-W01-002_SQL-01.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40779421, Trigger: 137123
+Descripción: El puerto TCP del servicio MS SQL Server no está disponible actualmente.
+El problema comenzó a las 01:16:51 el 2024.02.19
 Nombre del problema: MSSQL: Servicio no disponible
-Host: RES-PA-W01-002_SQL-01
+Host: RES-PA-W01-002_SQL-PA-W01-002 (Estadísticas)
 Gravedad: Desastre
 Datos operativos: Caído (0)
-ID del problema original: 40774285
+ID del problema original: 40779421
 "
-13,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-001_SQL-01,"[PROBLEMA: Desastre]
-Host: RES-PA-W01-001_SQL-01 (192.168.200.1)
+13,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-001_SQL-PA-W01-001,"[PROBLEMA: Desastre]
+Host: RES-PA-W01-001_SQL-PA-W01-001 (10.122.1.69)
 Nombre: MSSQL: Servicio no disponible
-Evento: 40774286, Disparador: 28771
-Descripción: El servicio MSSQL no está disponible en RES-PA-W01-001_SQL-01.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40779425, Trigger: 176627
+Descripción: El puerto TCP del servicio MS SQL Server no está disponible actualmente.
+El problema comenzó a las 01:17:02 el 2024.02.19
 Nombre del problema: MSSQL: Servicio no disponible
-Host: RES-PA-W01-001_SQL-01
+Host: RES-PA-W01-001_SQL-PA-W01-001 (Producción)
 Gravedad: Desastre
 Datos operativos: Caído (0)
-ID del problema original: 40774286
+ID del problema original: 40779425
 "
 14,No disponible por ping ICMP: PROBLEMA para 10.122.21.137,"[PROBLEMA: Alto]
 Host: 10.122.21.137 (10.122.21.137)
 Nombre: No disponible por ping ICMP
-Evento: 40774287, Disparador: 28772
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40779594, Trigger: 153933
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:19:06 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
-Host: 10.122.21.137
+Host: VISIO_CLICKSHARE_LILLE_SEBASTOPOL
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774287
+ID del problema original: 40779594
 "
 15,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-LO-W02-001,"[PROBLEMA: Alto]
-Host: IDRAC-SRP-LO-W02-001 (192.168.200.3)
+Host: IDRAC-SRP-LO-W02-001 (10.116.156.109)
 Nombre: No disponible por ping ICMP
-Evento: 40774288, Disparador: 28773
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40774294, Trigger: 172013
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:07:16 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
 Host: IDRAC-SRP-LO-W02-001
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774288
+ID del problema original: 40774294
 "
-16,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-003_SQL-01,"[PROBLEMA: Desastre]
-Host: RES-PA-W01-003_SQL-01 (192.168.200.4)
+16,MSSQL: Servicio no disponible: PROBLEMA para RES-PA-W01-003_SQL-PA-W01-003,"[PROBLEMA: Desastre]
+Host: RES-PA-W01-003_SQL-PA-W01-003 (10.122.1.71)
 Nombre: MSSQL: Servicio no disponible
-Evento: 40774289, Disparador: 28774
-Descripción: El servicio MSSQL no está disponible en RES-PA-W01-003_SQL-01.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40774318, Trigger: 177019
+Descripción: El puerto TCP del servicio MS SQL Server no está disponible actualmente.
+El problema comenzó a las 01:07:37 el 2024.02.19
 Nombre del problema: MSSQL: Servicio no disponible
-Host: RES-PA-W01-003_SQL-01
+Host: RES-PA-W01-003_SQL-PA-W01-003 (Consulta)
 Gravedad: Desastre
 Datos operativos: Caído (0)
-ID del problema original: 40774289
+ID del problema original: 40774318
 "
-17,Estado de verificación de salud fallido para FW_PA en el miembro 2,"[PROBLEMA: Alto]
+17,Estado de verificación de salud fallido para FW_PA en el miembro 2: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
-Nombre: Estado de verificación de salud fallido para FW_PA
-Evento: 40774290, Disparador: 28775
-Descripción: La verificación de salud falló para FW_PA en el miembro 2.
-El problema comenzó a las 01:07:08 el 2024.02.19
-Nombre del problema: Estado de verificación de salud fallido para FW_PA
+Nombre: Estado de verificación de salud fallido para FW_PA en el miembro 2
+Evento: 40774339, Trigger: 163792
+Descripción: 
+El problema comenzó a las 01:07:51 el 2024.02.19
+Nombre del problema: Estado de verificación de salud fallido para FW_PA en el miembro 2
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Fallido (0)
-ID del problema original: 40774290
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40774339
 "
-18,Estado de verificación de salud fallido para FW_PA en el miembro 3,"[PROBLEMA: Alto]
+18,Estado de verificación de salud fallido para FW_PA en el miembro 3: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
-Nombre: Estado de verificación de salud fallido para FW_PA
-Evento: 40774291, Disparador: 28776
-Descripción: La verificación de salud falló para FW_PA en el miembro 3.
-El problema comenzó a las 01:07:08 el 2024.02.19
-Nombre del problema: Estado de verificación de salud fallido para FW_PA
+Nombre: Estado de verificación de salud fallido para FW_PA en el miembro 3
+Evento: 40774340, Trigger: 163793
+Descripción: 
+El problema comenzó a las 01:07:51 el 2024.02.19
+Nombre del problema: Estado de verificación de salud fallido para FW_PA en el miembro 3
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Fallido (0)
-ID del problema original: 40774291
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40774340
 "
 19,No disponible por ping ICMP: PROBLEMA para 10.122.21.132,"[PROBLEMA: Alto]
 Host: 10.122.21.132 (10.122.21.132)
 Nombre: No disponible por ping ICMP
-Evento: 40774292, Disparador: 28777
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40774496, Trigger: 153945
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:09:10 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
-Host: 10.122.21.132
+Host: VISIO_LIFESIZE_LILLE_SEBASTOPOL
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774292
+ID del problema original: 40774496
 "
 20,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-PA-E01-003,"[PROBLEMA: Alto]
-Host: IDRAC-SRP-PA-E01-003 (192.168.200.5)
+Host: IDRAC-SRP-PA-E01-003 (172.20.31.13)
 Nombre: No disponible por ping ICMP
-Evento: 40774293, Disparador: 28778
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40775371, Trigger: 172397
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:10:20 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
 Host: IDRAC-SRP-PA-E01-003
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774293
+ID del problema original: 40775371
 "
 21,No disponible por ping ICMP: PROBLEMA para 172.20.31.14,"[PROBLEMA: Alto]
 Host: 172.20.31.14 (172.20.31.14)
 Nombre: No disponible por ping ICMP
-Evento: 40774294, Disparador: 28779
-Descripción: Las últimas tres intentos resultaron en tiempo de espera. Por favor, verifique la conectividad del dispositivo.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40775372, Trigger: 172431
+Descripción: Los últimos tres intentos devolvieron timeout. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:10:21 el 2024.02.19
 Nombre del problema: No disponible por ping ICMP
-Host: 172.20.31.14
+Host: IDRAC-SRP-PA-E01-004
 Gravedad: Alto
 Datos operativos: Caído (0)
-ID del problema original: 40774294
+ID del problema original: 40775372
 "
-22,Túnel VPN caído [ADM 70 - 172.16.0.0/16]: PROBLEMA,"[PROBLEMA: Alto]
+22,Túnel VPN caído [ADM 70 - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 70 - 172.16.0.0/16]
-Evento: 40774295, Disparador: 28780
-Descripción: El túnel VPN [ADM 70 - 172.16.0.0/16] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776539, Trigger: 170123
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 70 - 172.16.0.0/16]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774295
+Datos operativos: 1
+ID del problema original: 40776539
 "
-23,Túnel VPN caído [ADM 71 - 172.16.0.0/16]: PROBLEMA,"[PROBLEMA: Alto]
+23,Túnel VPN caído [ADM 71 - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 71 - 172.16.0.0/16]
-Evento: 40774296, Disparador: 28781
-Descripción: El túnel VPN [ADM 71 - 172.16.0.0/16] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776540, Trigger: 170124
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 71 - 172.16.0.0/16]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774296
+Datos operativos: 1
+ID del problema original: 40776540
 "
-24,Túnel VPN caído [ADM 72 - 172.16.0.0/16]: PROBLEMA,"[PROBLEMA: Alto]
+24,Túnel VPN caído [ADM 72 - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 72 - 172.16.0.0/16]
-Evento: 40774297, Disparador: 28782
-Descripción: El túnel VPN [ADM 72 - 172.16.0.0/16] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776541, Trigger: 170125
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 72 - 172.16.0.0/16]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774297
+Datos operativos: 1
+ID del problema original: 40776541
 "
-25,Túnel VPN caído [ADM 74 - 172.16.0.0/16]: PROBLEMA,"[PROBLEMA: Alto]
+25,Túnel VPN caído [ADM 74 - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
 Host: FW-DC (192.168.200.1)
 Nombre: Túnel VPN caído [ADM 74 - 172.16.0.0/16]
-Evento: 40774298, Disparador: 28783
-Descripción: El túnel VPN [ADM 74 - 172.16.0.0/16] está caído.
-El problema comenzó a las 01:07:08 el 2024.02.19
+Evento: 40776543, Trigger: 170127
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
 Nombre del problema: Túnel VPN caído [ADM 74 - 172.16.0.0/16]
 Host: FW-DC
 Gravedad: Alto
-Datos operativos: Caído (0)
-ID del problema original: 40774298
+Datos operativos: 1
+ID del problema original: 40776543
 "
-26,Túnel VPN Caído [ADM 73 - 172.16.0.0/16]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-27,Túnel VPN Caído [TAHITI - 172.16.0.0/16]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-28,Túnel VPN Caído [ADM 70 -10.122.16.0/20]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-29,Túnel VPN Caído [ADM 72 -10.122.16.0/20]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-30,Túnel VPN Caído [TAHITI - 10.122.16.0/20]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-31,Túnel VPN Caído [EOS JIRA NET]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\n...
-32,No disponible por ping ICMP: PROBLEMA para FW-TA,[PROBLEMA: Alto]\nHost: FW-TA (172.20.70.1)\nNombre: No disponible por ping ICMP\n...
-33,No disponible por ping ICMP: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\nNombre: No disponible por ping ICMP\n...
-34,No disponible por ping ICMP: PROBLEMA para Sonda Temperatura Nantes,[PROBLEMA: Alto]\nHost: Sonda Temperatura Nantes (172.20.60.1)\nNombre: No disponible por ping ICMP\n...
-35,No disponible por ping ICMP: PROBLEMA para Sonda Temperatura Lons,[PROBLEMA: Alto]\nHost: Sonda Temperatura Lons (172.20.60.2)\nNombre: No disponible por ping ICMP\n...
-36,Túnel VPN Caído [VPN1]: PROBLEMA para FW-PA,[PROBLEMA: Alto]\nHost: FW-PA (172.20.30.1)\nNombre: Túnel VPN Caído [VPN1]\n...
-37,Túnel VPN Caído [VPN2]: PROBLEMA para FW-PA,[PROBLEMA: Alto]\nHost: FW-PA (172.20.30.1)\nNombre: Túnel VPN Caído [VPN2]\n...
-38,No disponible por ping ICMP: PROBLEMA para 172.20.40.4,[PROBLEMA: Desastre]\nHost: 172.20.40.4 (172.20.40.4)\nNombre: No disponible por ping ICMP\n...
-39,No disponible por ping ICMP: PROBLEMA para 172.20.20.2,[PROBLEMA: Desastre]\nHost: 172.20.20.2 (172.20.20.2)\nNombre: No disponible por ping ICMP\n...
-40,No disponible por ping ICMP: OK para Sonda Temperatura Nantes,[OK: Alto]\nHost: Sonda Temperatura Nantes (172.20.60.1)\nNombre: No disponible por ping ICMP\n...
-41,No disponible por ping ICMP: OK para Sonda Temperatura Lons,[OK: Alto]\nHost: Sonda Temperatura Lons (172.20.60.2)\nNombre: No disponible por ping ICMP\n...
-42,No disponible por ping ICMP: PROBLEMA para FW-LO,[PROBLEMA: Alto]\nHost: FW-LO (172.20.50.1)\nNombre: No disponible por ping ICMP\n...
-43,No disponible por ping ICMP: PROBLEMA para FW-PA,[PROBLEMA: Alto]\nHost: FW-PA (172.20.30.1)\nNombre: No disponible por ping ICMP\n...
-44,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-PA-E01-001,[PROBLEMA: Alto]\nHost: IDRAC-SRP-PA-E01-001 (172.20.30.3)\nNombre: No disponible por ping ICMP\n...
-45,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-PA-E01-002,[PROBLEMA: Alto]\nHost: IDRAC-SRP-PA-E01-002 (172.20.30.4)\nNombre: No disponible por ping ICMP\n...
-46,Túnel VPN Caído [ADM 74 -10.122.16.0/20]: PROBLEMA para FW-DC,[PROBLEMA: Alto]\nHost: FW-DC (192.168.200.1)\nNombre: Túnel VPN Caído [ADM 74 -10.122.16.0/20]\n...
-47,No disponible por ping ICMP: PROBLEMA para 10.116.149.70,[PROBLEMA: Alto]\nHost: 10.116.149.70 (10.116.149.70)\nNombre: No disponible por ping ICMP\n...
-48,Estado de Verificación de Salud Fallido a DC en miembro 3: PROBLEMA para FW-PA,[PROBLEMA: Alto]\nHost: FW-PA (172.20.30.1)\nNombre: Estado de Verificación de Salud Fallido a DC en miembro 3\n...
-49,Estado de Verificación de Salud Fallido a DC en miembro 4: PROBLEMA para FW-PA,[PROBLEMA: Alto]\nHost: FW-PA (172.20.30.1)\nNombre: Estado de Verificación de Salud Fallido a DC en miembro 4\n...
+26,Túnel VPN Caído [ADM 73 - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [ADM 73 - 172.16.0.0/16]
+Evento: 40776542, Disparador: 170126
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [ADM 73 - 172.16.0.0/16]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776542
+"
+27,Túnel VPN Caído [TAHITI - 172.16.0.0/16]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [TAHITI - 172.16.0.0/16]
+Evento: 40776544, Disparador: 170128
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [TAHITI - 172.16.0.0/16]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776544
+"
+28,Túnel VPN Caído [ADM 70 -10.122.16.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [ADM 70 -10.122.16.0/20]
+Evento: 40776545, Disparador: 170738
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [ADM 70 -10.122.16.0/20]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776545
+"
+29,Túnel VPN Caído [ADM 72 -10.122.16.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [ADM 72 -10.122.16.0/20]
+Evento: 40776547, Disparador: 170740
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [ADM 72 -10.122.16.0/20]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776547
+"
+30,Túnel VPN Caído [TAHITI - 10.122.16.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [TAHITI - 10.122.16.0/20]
+Evento: 40776550, Disparador: 170743
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [TAHITI - 10.122.16.0/20]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776550
+"
+31,Túnel VPN Caído [EOS JIRA NET]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [EOS JIRA NET]
+Evento: 40776551, Disparador: 173123
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [EOS JIRA NET]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776551
+"
+32,No disponible por ping ICMP: PROBLEMA para FW-TA,"[PROBLEMA: Alto]
+Host: FW-TA (172.20.70.1)
+Nombre: No disponible por ping ICMP
+Evento: 40779548, Disparador: 173488
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:18:36 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: FW-TA
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40779548
+"
+33,No disponible por ping ICMP: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: No disponible por ping ICMP
+Evento: 40779620, Disparador: 163764
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:19:21 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40779620
+"
+34,No disponible por ping ICMP: PROBLEMA para Sonda de Temperatura Nantes,"[PROBLEMA: Alto]
+Host: Sonda de Temperatura Nantes (172.16.44.16)
+Nombre: No disponible por ping ICMP
+Evento: 40780144, Disparador: 32343
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:19:28 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: Sonda de Temperatura Nantes
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40780144
+"
+35,No disponible por ping ICMP: PROBLEMA para Sonda de Temperatura Lons,"[PROBLEMA: Alto]
+Host: Sonda de Temperatura Lons (172.16.64.16)
+Nombre: No disponible por ping ICMP
+Evento: 40780145, Disparador: 32351
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:19:29 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: Sonda de Temperatura Lons
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40780145
+"
+36,Túnel VPN Caído [VPN1]: PROBLEMA para FW-PA,"[PROBLEMA: Alto]
+Host: FW-PA (172.20.30.1)
+Nombre: Túnel VPN Caído [VPN1]
+Evento: 40779859, Disparador: 160487
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:18:24 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [VPN1]
+Host: FW-PA
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40779859
+"
+37,Túnel VPN Caído [VPN2]: PROBLEMA para FW-PA,"[PROBLEMA: Alto]
+Host: FW-PA (172.20.30.1)
+Nombre: Túnel VPN Caído [VPN2]
+Evento: 40779860, Disparador: 160488
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:18:24 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [VPN2]
+Host: FW-PA
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40779860
+"
+38,No disponible por ping ICMP: PROBLEMA para 172.20.40.4,"[PROBLEMA: Desastre]
+Host: 172.20.40.4 (172.20.40.4)
+Nombre: No disponible por ping ICMP
+Evento: 40779867, Disparador: 164889
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:18:42 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: SW-NA-01
+Gravedad: Desastre
+Datos operativos: Caído (0)
+ID del problema original: 40779867
+"
+39,No disponible por ping ICMP: PROBLEMA para 172.20.20.2,"[PROBLEMA: Desastre]
+Host: 172.20.20.2 (172.20.20.2)
+Nombre: No disponible por ping ICMP
+Evento: 40774952, Disparador: 156852
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:09:15 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: SW-WL-01
+Gravedad: Desastre
+Datos operativos: Caído (0)
+ID del problema original: 40774952
+"
+40,No disponible por ping ICMP: OK para Sonda de Temperatura Nantes,"[OK: Alto]
+Host: Sonda de Temperatura Nantes (172.16.44.16)
+Nombre: No disponible por ping ICMP
+Evento: 40775327, Disparador: 32343
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:09:28 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: Sonda de Temperatura Nantes
+Gravedad: Alto
+Datos operativos: Arriba (1)
+ID del problema original: 40775327
+"
+41,No disponible por ping ICMP: OK para Sonda de Temperatura Lons,"[OK: Alto]
+Host: Sonda de Temperatura Lons (172.16.64.16)
+Nombre: No disponible por ping ICMP
+Evento: 40775146, Disparador: 32351
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:07:29 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: Sonda de Temperatura Lons
+Gravedad: Alto
+Datos operativos: Arriba (1)
+ID del problema original: 40775146
+"
+42,No disponible por ping ICMP: PROBLEMA para FW-LO,"[PROBLEMA: Alto]
+Host: FW-LO (172.20.50.1)
+Nombre: No disponible por ping ICMP
+Evento: 40775149, Disparador: 160402
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:07:19 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: FW-LO
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40775149
+"
+43,No disponible por ping ICMP: PROBLEMA para FW-PA,"[PROBLEMA: Alto]
+Host: FW-PA (172.20.30.1)
+Nombre: No disponible por ping ICMP
+Evento: 40775339, Disparador: 160444
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:10:16 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: FW-PA
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40775339
+"
+44,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-PA-E01-001,"[PROBLEMA: Alto]
+Host: IDRAC-SRP-PA-E01-001 (172.20.31.11)
+Nombre: No disponible por ping ICMP
+Evento: 40775343, Disparador: 172238
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:10:18 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: IDRAC-SRP-PA-E01-001
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40775343
+"
+45,No disponible por ping ICMP: PROBLEMA para IDRAC-SRP-PA-E01-002,"[PROBLEMA: Alto]
+Host: IDRAC-SRP-PA-E01-002 (172.20.31.12)
+Nombre: No disponible por ping ICMP
+Evento: 40775370, Disparador: 172353
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:10:19 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: IDRAC-SRP-PA-E01-002
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40775370
+"
+46,Túnel VPN Caído [ADM 74 -10.122.16.0/20]: PROBLEMA para FW-DC,"[PROBLEMA: Alto]
+Host: FW-DC (192.168.200.1)
+Nombre: Túnel VPN Caído [ADM 74 -10.122.16.0/20]
+Evento: 40776549, Disparador: 170742
+Descripción: El túnel VPN IPsec Fase 2 está caído, ¡por favor verifique!
+El problema comenzó a las 01:11:21 el 2024.02.19
+Nombre del problema: Túnel VPN Caído [ADM 74 -10.122.16.0/20]
+Host: FW-DC
+Gravedad: Alto
+Datos operativos: 1
+ID del problema original: 40776549
+"
+47,No disponible por ping ICMP: PROBLEMA para 10.116.149.70,"[PROBLEMA: Alto]
+Host: 10.116.149.70 (10.116.149.70)
+Nombre: No disponible por ping ICMP
+Evento: 40779939, Disparador: 154898
+Descripción: Los últimos tres intentos devolvieron tiempo de espera. Por favor, verifique la conectividad del dispositivo.
+El problema comenzó a las 01:19:05 el 2024.02.19
+Nombre del problema: No disponible por ping ICMP
+Host: VISIO_CLICKSHARE_NANTES_GRASLIN
+Gravedad: Alto
+Datos operativos: Caído (0)
+ID del problema original: 40779939
+"
+48,Estado de Verificación de Salud Fallido a DC en el miembro 3: PROBLEMA para FW-PA,"[PROBLEMA: Alto]
+Host: FW-PA (172.20.30.1)
+Nombre: Estado de Verificación de Salud Fallido a DC en el miembro 3
+Evento: 40779659, Disparador: 160485
+Descripción: 
+El problema comenzó a las 01:16:52 el 2024.02.19
+Nombre del problema: Estado de Verificación de Salud Fallido a DC en el miembro 3
+Host: FW-PA
+Gravedad: Alto
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40779659
+"
+49,Estado de Verificación de Salud Fallido a DC en el miembro 4: PROBLEMA para FW-PA,"[PROBLEMA: Alto]
+Host: FW-PA (172.20.30.1)
+Nombre: Estado de Verificación de Salud Fallido a DC en el miembro 4
+Evento: 40779660, Disparador: 160486
+Descripción: 
+El problema comenzó a las 01:16:52 el 2024.02.19
+Nombre del problema: Estado de Verificación de Salud Fallido a DC en el miembro 4
+Host: FW-PA
+Gravedad: Alto
+Datos operativos: Estado: Alarma (1)
+ID del problema original: 40779660
+"

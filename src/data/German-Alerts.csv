@@ -2,324 +2,588 @@ ID,SUBJECT,MESSAGE
 1,Nicht erreichbar per ICMP-Ping: PROBLEM für 10.116.156.108,"[PROBLEM: Katastrophe]
 Host: 10.116.156.108 (10.116.156.108)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774274, Auslöser: 28759
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774274, Trigger: 28759
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:07:08 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
 Host: SWLONS
 Schweregrad: Katastrophe
-Betriebsdaten: Ausfall (0)
+Betriebsdaten: Down (0)
 Originale Problem-ID: 40774274
 "
 2,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-WL,"[PROBLEM: Hoch]
 Host: FW-WL (172.20.20.1)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774275, Auslöser: 28760
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774427, Trigger: 160465
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:08:20 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
 Host: FW-WL
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774275
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40774427
 "
-3,Health Check State Failed to FW_NA on member 2,"[PROBLEM: Hoch]
+3,Health Check State Failed to FW_NA on member 2: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: Health Check State Failed to FW_NA on member 2
-Ereignis: 40774276, Auslöser: 28761
-Beschreibung: Der Health Check für FW_NA auf Mitglied 2 ist fehlgeschlagen. Bitte überprüfen Sie den Zustand.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774972, Trigger: 163788
+Beschreibung: 
+Problem begann um 01:09:51 am 19.02.2024
 Problemname: Health Check State Failed to FW_NA on member 2
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Fehlgeschlagen (1)
-Originale Problem-ID: 40774276
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40774972
 "
-4,Health Check State Failed to FW_NA on member 3,"[PROBLEM: Hoch]
+4,Health Check State Failed to FW_NA on member 3: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: Health Check State Failed to FW_NA on member 3
-Ereignis: 40774277, Auslöser: 28762
-Beschreibung: Der Health Check für FW_NA auf Mitglied 3 ist fehlgeschlagen. Bitte überprüfen Sie den Zustand.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774973, Trigger: 163789
+Beschreibung: 
+Problem begann um 01:09:51 am 19.02.2024
 Problemname: Health Check State Failed to FW_NA on member 3
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Fehlgeschlagen (1)
-Originale Problem-ID: 40774277
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40774973
 "
-5,VPN Tunnel Down [ADM 73 - 10.122.96.0/17]: PROBLEM,"[PROBLEM: Hoch]
+5,VPN Tunnel Down [ADM 73 - 10.122.96.0/17]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 73 - 10.122.96.0/17]
-Ereignis: 40774278, Auslöser: 28763
-Beschreibung: Der VPN-Tunnel [ADM 73 - 10.122.96.0/17] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776532, Trigger: 163805
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 73 - 10.122.96.0/17]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774278
+Betriebsdaten: 1
+Originale Problem-ID: 40776532
 "
-6,VPN Tunnel Down [ADM 74 - 10.122.0.0/20]: PROBLEM,"[PROBLEM: Hoch]
+6,VPN Tunnel Down [ADM 74 - 10.122.0.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 74 - 10.122.0.0/20]
-Ereignis: 40774279, Auslöser: 28764
-Beschreibung: Der VPN-Tunnel [ADM 74 - 10.122.0.0/20] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776534, Trigger: 163807
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 74 - 10.122.0.0/20]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774279
+Betriebsdaten: 1
+Originale Problem-ID: 40776534
 "
-7,VPN Tunnel Down [ADM 74 - 10.122.96.0/17]: PROBLEM,"[PROBLEM: Hoch]
+7,VPN Tunnel Down [ADM 74 - 10.122.96.0/17]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 74 - 10.122.96.0/17]
-Ereignis: 40774280, Auslöser: 28765
-Beschreibung: Der VPN-Tunnel [ADM 74 - 10.122.96.0/17] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776535, Trigger: 163808
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 74 - 10.122.96.0/17]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774280
+Betriebsdaten: 1
+Originale Problem-ID: 40776535
 "
-8,VPN Tunnel Down [TAHITI - 10.116.0.0/16]: PROBLEM,"[PROBLEM: Hoch]
+8,VPN Tunnel Down [TAHITI - 10.116.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [TAHITI - 10.116.0.0/16]
-Ereignis: 40774281, Auslöser: 28766
-Beschreibung: Der VPN-Tunnel [TAHITI - 10.116.0.0/16] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776536, Trigger: 163809
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [TAHITI - 10.116.0.0/16]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774281
+Betriebsdaten: 1
+Originale Problem-ID: 40776536
 "
-9,VPN Tunnel Down [TAHITI - 10.122.96.0/17]: PROBLEM,"[PROBLEM: Hoch]
+9,VPN Tunnel Down [TAHITI - 10.122.96.0/17]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [TAHITI - 10.122.96.0/17]
-Ereignis: 40774282, Auslöser: 28767
-Beschreibung: Der VPN-Tunnel [TAHITI - 10.122.96.0/17] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776538, Trigger: 163811
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [TAHITI - 10.122.96.0/17]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774282
+Betriebsdaten: 1
+Originale Problem-ID: 40776538
 "
-10,VPN Tunnel Down [TAHITI - 10.122.0.0/20]: PROBLEM,"[PROBLEM: Hoch]
+10,VPN Tunnel Down [TAHITI - 10.122.0.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [TAHITI - 10.122.0.0/20]
-Ereignis: 40774283, Auslöser: 28768
-Beschreibung: Der VPN-Tunnel [TAHITI - 10.122.0.0/20] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776537, Trigger: 163810
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [TAHITI - 10.122.0.0/20]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774283
+Betriebsdaten: 1
+Originale Problem-ID: 40776537
 "
 11,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.71.5,"[PROBLEM: Hoch]
 Host: 172.20.71.5 (172.20.71.5)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774284, Auslöser: 28769
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776672, Trigger: 170498
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:12:09 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
-Host: 172.20.71.5
+Host: ILO-SRP-TA-E01-001
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774284
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40776672
 "
-12,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-002_SQL-01,"[PROBLEM: Katastrophe]
-Host: RES-PA-W01-002_SQL-01 (192.168.100.2)
+12,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-002_SQL-PA-W01-002,"[PROBLEM: Katastrophe]
+Host: RES-PA-W01-002_SQL-PA-W01-002 (10.122.1.70)
 Name: MSSQL: Dienst nicht verfügbar
-Ereignis: 40774285, Auslöser: 28770
-Beschreibung: Der MSSQL-Dienst ist nicht verfügbar. Bitte überprüfen Sie den Dienst.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40779421, Trigger: 137123
+Beschreibung: Der TCP-Port des MS SQL Server-Dienstes ist derzeit nicht verfügbar.
+Problem begann um 01:16:51 am 19.02.2024
 Problemname: MSSQL: Dienst nicht verfügbar
-Host: RES-PA-W01-002_SQL-01
+Host: RES-PA-W01-002_SQL-PA-W01-002 (Stats)
 Schweregrad: Katastrophe
-Betriebsdaten: Nicht verfügbar (0)
-Originale Problem-ID: 40774285
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779421
 "
-13,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-001_SQL-01,"[PROBLEM: Katastrophe]
-Host: RES-PA-W01-001_SQL-01 (192.168.100.1)
+13,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-001_SQL-PA-W01-001,"[PROBLEM: Katastrophe]
+Host: RES-PA-W01-001_SQL-PA-W01-001 (10.122.1.69)
 Name: MSSQL: Dienst nicht verfügbar
-Ereignis: 40774286, Auslöser: 28771
-Beschreibung: Der MSSQL-Dienst ist nicht verfügbar. Bitte überprüfen Sie den Dienst.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40779425, Trigger: 176627
+Beschreibung: Der TCP-Port des MS SQL Server-Dienstes ist derzeit nicht verfügbar.
+Problem begann um 01:17:02 am 19.02.2024
 Problemname: MSSQL: Dienst nicht verfügbar
-Host: RES-PA-W01-001_SQL-01
+Host: RES-PA-W01-001_SQL-PA-W01-001 (Prod)
 Schweregrad: Katastrophe
-Betriebsdaten: Nicht verfügbar (0)
-Originale Problem-ID: 40774286
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779425
 "
 14,Nicht erreichbar per ICMP-Ping: PROBLEM für 10.122.21.137,"[PROBLEM: Hoch]
 Host: 10.122.21.137 (10.122.21.137)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774287, Auslöser: 28772
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40779594, Trigger: 153933
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:19:06 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
-Host: 10.122.21.137
+Host: VISIO_CLICKSHARE_LILLE_SEBASTOPOL
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774287
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779594
 "
 15,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-LO-W02-001,"[PROBLEM: Hoch]
-Host: IDRAC-SRP-LO-W02-001 (192.168.200.2)
+Host: IDRAC-SRP-LO-W02-001 (10.116.156.109)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774288, Auslöser: 28773
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774294, Trigger: 172013
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:07:16 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
 Host: IDRAC-SRP-LO-W02-001
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774288
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40774294
 "
-16,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-003_SQL-01,"[PROBLEM: Katastrophe]
-Host: RES-PA-W01-003_SQL-01 (192.168.100.3)
+16,MSSQL: Dienst nicht verfügbar: PROBLEM für RES-PA-W01-003_SQL-PA-W01-003,"[PROBLEM: Katastrophe]
+Host: RES-PA-W01-003_SQL-PA-W01-003 (10.122.1.71)
 Name: MSSQL: Dienst nicht verfügbar
-Ereignis: 40774289, Auslöser: 28774
-Beschreibung: Der MSSQL-Dienst ist nicht verfügbar. Bitte überprüfen Sie den Dienst.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774318, Trigger: 177019
+Beschreibung: Der TCP-Port des MS SQL Server-Dienstes ist derzeit nicht verfügbar.
+Problem begann um 01:07:37 am 19.02.2024
 Problemname: MSSQL: Dienst nicht verfügbar
-Host: RES-PA-W01-003_SQL-01
+Host: RES-PA-W01-003_SQL-PA-W01-003 (Query)
 Schweregrad: Katastrophe
-Betriebsdaten: Nicht verfügbar (0)
-Originale Problem-ID: 40774289
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40774318
 "
-17,Health Check State Failed to FW_PA on member 2,"[PROBLEM: Hoch]
+17,Health Check State Failed to FW_PA on member 2: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: Health Check State Failed to FW_PA on member 2
-Ereignis: 40774290, Auslöser: 28775
-Beschreibung: Der Health Check für FW_PA auf Mitglied 2 ist fehlgeschlagen. Bitte überprüfen Sie den Zustand.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774339, Trigger: 163792
+Beschreibung: 
+Problem begann um 01:07:51 am 19.02.2024
 Problemname: Health Check State Failed to FW_PA on member 2
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Fehlgeschlagen (1)
-Originale Problem-ID: 40774290
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40774339
 "
-18,Health Check State Failed to FW_PA on member 3,"[PROBLEM: Hoch]
+18,Health Check State Failed to FW_PA on member 3: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: Health Check State Failed to FW_PA on member 3
-Ereignis: 40774291, Auslöser: 28776
-Beschreibung: Der Health Check für FW_PA auf Mitglied 3 ist fehlgeschlagen. Bitte überprüfen Sie den Zustand.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774340, Trigger: 163793
+Beschreibung: 
+Problem begann um 01:07:51 am 19.02.2024
 Problemname: Health Check State Failed to FW_PA on member 3
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Fehlgeschlagen (1)
-Originale Problem-ID: 40774291
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40774340
 "
 19,Nicht erreichbar per ICMP-Ping: PROBLEM für 10.122.21.132,"[PROBLEM: Hoch]
 Host: 10.122.21.132 (10.122.21.132)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774292, Auslöser: 28777
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40774496, Trigger: 153945
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:09:10 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
-Host: 10.122.21.132
+Host: VISIO_LIFESIZE_LILLE_SEBASTOPOL
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774292
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40774496
 "
 20,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-PA-E01-003,"[PROBLEM: Hoch]
-Host: IDRAC-SRP-PA-E01-003 (192.168.200.3)
+Host: IDRAC-SRP-PA-E01-003 (172.20.31.13)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774293, Auslöser: 28778
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40775371, Trigger: 172397
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:10:20 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
 Host: IDRAC-SRP-PA-E01-003
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774293
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775371
 "
 21,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.31.14,"[PROBLEM: Hoch]
 Host: 172.20.31.14 (172.20.31.14)
 Name: Nicht erreichbar per ICMP-Ping
-Ereignis: 40774294, Auslöser: 28779
-Beschreibung: Die letzten drei Versuche führten zu einem Timeout. Bitte überprüfen Sie die Geräteverbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40775372, Trigger: 172431
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:10:21 am 19.02.2024
 Problemname: Nicht erreichbar per ICMP-Ping
-Host: 172.20.31.14
+Host: IDRAC-SRP-PA-E01-004
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774294
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775372
 "
-22,VPN Tunnel Down [ADM 70 - 172.16.0.0/16]: PROBLEM,"[PROBLEM: Hoch]
+22,VPN Tunnel Down [ADM 70 - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 70 - 172.16.0.0/16]
-Ereignis: 40774295, Auslöser: 28780
-Beschreibung: Der VPN-Tunnel [ADM 70 - 172.16.0.0/16] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776539, Trigger: 170123
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 70 - 172.16.0.0/16]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774295
+Betriebsdaten: 1
+Originale Problem-ID: 40776539
 "
-23,VPN Tunnel Down [ADM 71 - 172.16.0.0/16]: PROBLEM,"[PROBLEM: Hoch]
+23,VPN Tunnel Down [ADM 71 - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 71 - 172.16.0.0/16]
-Ereignis: 40774296, Auslöser: 28781
-Beschreibung: Der VPN-Tunnel [ADM 71 - 172.16.0.0/16] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776540, Trigger: 170124
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 71 - 172.16.0.0/16]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774296
+Betriebsdaten: 1
+Originale Problem-ID: 40776540
 "
-24,VPN Tunnel Down [ADM 72 - 172.16.0.0/16]: PROBLEM,"[PROBLEM: Hoch]
+24,VPN Tunnel Down [ADM 72 - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 72 - 172.16.0.0/16]
-Ereignis: 40774297, Auslöser: 28782
-Beschreibung: Der VPN-Tunnel [ADM 72 - 172.16.0.0/16] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776541, Trigger: 170125
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 72 - 172.16.0.0/16]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774297
+Betriebsdaten: 1
+Originale Problem-ID: 40776541
 "
-25,VPN Tunnel Down [ADM 74 - 172.16.0.0/16]: PROBLEM,"[PROBLEM: Hoch]
+25,VPN Tunnel Down [ADM 74 - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
 Host: FW-DC (192.168.200.1)
 Name: VPN Tunnel Down [ADM 74 - 172.16.0.0/16]
-Ereignis: 40774298, Auslöser: 28783
-Beschreibung: Der VPN-Tunnel [ADM 74 - 172.16.0.0/16] ist ausgefallen. Bitte überprüfen Sie die Verbindung.
-Problem begann um 01:07:08 am 2024.02.19
+Event: 40776543, Trigger: 170127
+Beschreibung: IPsec VPN Tunnel Phase 2 ist down, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
 Problemname: VPN Tunnel Down [ADM 74 - 172.16.0.0/16]
 Host: FW-DC
 Schweregrad: Hoch
-Betriebsdaten: Ausfall (0)
-Originale Problem-ID: 40774298
+Betriebsdaten: 1
+Originale Problem-ID: 40776543
 "
-26,VPN-Tunnel ausgefallen [ADM 73 - 172.16.0.0/16]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-27,VPN-Tunnel ausgefallen [TAHITI - 172.16.0.0/16]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-28,VPN-Tunnel ausgefallen [ADM 70 -10.122.16.0/20]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-29,VPN-Tunnel ausgefallen [ADM 72 -10.122.16.0/20]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-30,VPN-Tunnel ausgefallen [TAHITI - 10.122.16.0/20]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-31,VPN-Tunnel ausgefallen [EOS JIRA NET]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-32,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-TA,[PROBLEM: Hoch]\nHost: FW-TA (172.20.70.1)\nName: Nicht erreichbar per ICMP-Ping\n...
-33,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\nName: Nicht erreichbar per ICMP-Ping\n...
-34,Nicht erreichbar per ICMP-Ping: PROBLEM für Sonde Temperatur Nantes,[PROBLEM: Hoch]\nHost: Sonde Temperatur Nantes (...)\n...
-35,Nicht erreichbar per ICMP-Ping: PROBLEM für Sonde Temperatur Lons,[PROBLEM: Hoch]\nHost: Sonde Temperatur Lons (...)\n...
-36,VPN-Tunnel ausgefallen [VPN1]: PROBLEM für FW-PA,[PROBLEM: Hoch]\nHost: FW-PA (172.20.30.1)\nName: VPN-Tunnel ausgefallen [VPN1]\n...
-37,VPN-Tunnel ausgefallen [VPN2]: PROBLEM für FW-PA,[PROBLEM: Hoch]\nHost: FW-PA (172.20.30.1)\nName: VPN-Tunnel ausgefallen [VPN2]\n...
-38,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.40.4,[PROBLEM: Katastrophe]\nHost: 172.20.40.4 (172.20.40.4)\n...
-39,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.20.2,[PROBLEM: Katastrophe]\nHost: 172.20.20.2 (172.20.20.2)\n...
-40,Nicht erreichbar per ICMP-Ping: OK für Sonde Temperatur Nantes,[OK: Hoch]\nHost: Sonde Temperatur Nantes (172...)\n...
-41,Nicht erreichbar per ICMP-Ping: OK für Sonde Temperatur Lons,[OK: Hoch]\nHost: Sonde Temperatur Lons (172...)\n...
-42,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-LO,[PROBLEM: Hoch]\nHost: FW-LO (172.20.50.1)\nName: Nicht erreichbar per ICMP-Ping\n...
-43,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-PA,[PROBLEM: Hoch]\nHost: FW-PA (172.20.30.1)\nName: Nicht erreichbar per ICMP-Ping\n...
-44,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-PA-E01-001,[PROBLEM: Hoch]\nHost: IDRAC-SRP-PA-E01-001 (172...)\n...
-45,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-PA-E01-002,[PROBLEM: Hoch]\nHost: IDRAC-SRP-PA-E01-002 (172...)\n...
-46,VPN-Tunnel ausgefallen [ADM 74 -10.122.16.0/20]: PROBLEM für FW-DC,[PROBLEM: Hoch]\nHost: FW-DC (192.168.200.1)\n...
-47,Nicht erreichbar per ICMP-Ping: PROBLEM für 10.116.149.70,[PROBLEM: Hoch]\nHost: 10.116.149.70 (10.116.149.70)\n...
-48,Health Check State Failed to DC on member 3: PROBLEM für FW-PA,[PROBLEM: Hoch]\nHost: FW-PA (172.20.30.1)\nName: Health Check State Failed to DC on member 3\n...
-49,Health Check State Failed to DC on member 4: PROBLEM für FW-PA,[PROBLEM: Hoch]\nHost: FW-PA (172.20.30.1)\nName: Health Check State Failed to DC on member 4\n...
+26,VPN-Tunnel ausgefallen [ADM 73 - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [ADM 73 - 172.16.0.0/16]
+Event: 40776542, Trigger: 170126
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [ADM 73 - 172.16.0.0/16]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776542
+"
+27,VPN-Tunnel ausgefallen [TAHITI - 172.16.0.0/16]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [TAHITI - 172.16.0.0/16]
+Event: 40776544, Trigger: 170128
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [TAHITI - 172.16.0.0/16]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776544
+"
+28,VPN-Tunnel ausgefallen [ADM 70 -10.122.16.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [ADM 70 -10.122.16.0/20]
+Event: 40776545, Trigger: 170738
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [ADM 70 -10.122.16.0/20]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776545
+"
+29,VPN-Tunnel ausgefallen [ADM 72 -10.122.16.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [ADM 72 -10.122.16.0/20]
+Event: 40776547, Trigger: 170740
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [ADM 72 -10.122.16.0/20]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776547
+"
+30,VPN-Tunnel ausgefallen [TAHITI - 10.122.16.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [TAHITI - 10.122.16.0/20]
+Event: 40776550, Trigger: 170743
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [TAHITI - 10.122.16.0/20]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776550
+"
+31,VPN-Tunnel ausgefallen [EOS JIRA NET]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [EOS JIRA NET]
+Event: 40776551, Trigger: 173123
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [EOS JIRA NET]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776551
+"
+32,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-TA,"[PROBLEM: Hoch]
+Host: FW-TA (172.20.70.1)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40779548, Trigger: 173488
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:18:36 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: FW-TA
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779548
+"
+33,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40779620, Trigger: 163764
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:19:21 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779620
+"
+34,Nicht erreichbar per ICMP-Ping: PROBLEM für Sonde Temperature Nantes,"[PROBLEM: Hoch]
+Host: Sonde Temperature Nantes (172.16.44.16)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40780144, Trigger: 32343
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:19:28 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: Sonde Temperature Nantes
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40780144
+"
+35,Nicht erreichbar per ICMP-Ping: PROBLEM für Sonde Temperature Lons,"[PROBLEM: Hoch]
+Host: Sonde Temperature Lons (172.16.64.16)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40780145, Trigger: 32351
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:19:29 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: Sonde Temperature Lons
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40780145
+"
+36,VPN-Tunnel ausgefallen [VPN1]: PROBLEM für FW-PA,"[PROBLEM: Hoch]
+Host: FW-PA (172.20.30.1)
+Name: VPN-Tunnel ausgefallen [VPN1]
+Event: 40779859, Trigger: 160487
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:18:24 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [VPN1]
+Host: FW-PA
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40779859
+"
+37,VPN-Tunnel ausgefallen [VPN2]: PROBLEM für FW-PA,"[PROBLEM: Hoch]
+Host: FW-PA (172.20.30.1)
+Name: VPN-Tunnel ausgefallen [VPN2]
+Event: 40779860, Trigger: 160488
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:18:24 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [VPN2]
+Host: FW-PA
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40779860
+"
+38,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.40.4,"[PROBLEM: Katastrophe]
+Host: 172.20.40.4 (172.20.40.4)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40779867, Trigger: 164889
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:18:42 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: SW-NA-01
+Schweregrad: Katastrophe
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779867
+"
+39,Nicht erreichbar per ICMP-Ping: PROBLEM für 172.20.20.2,"[PROBLEM: Katastrophe]
+Host: 172.20.20.2 (172.20.20.2)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40774952, Trigger: 156852
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:09:15 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: SW-WL-01
+Schweregrad: Katastrophe
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40774952
+"
+40,Nicht erreichbar per ICMP-Ping: OK für Sonde Temperature Nantes,"[OK: Hoch]
+Host: Sonde Temperature Nantes (172.16.44.16)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775327, Trigger: 32343
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:09:28 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: Sonde Temperature Nantes
+Schweregrad: Hoch
+Betriebsdaten: Up (1)
+Originale Problem-ID: 40775327
+"
+41,Nicht erreichbar per ICMP-Ping: OK für Sonde Temperature Lons,"[OK: Hoch]
+Host: Sonde Temperature Lons (172.16.64.16)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775146, Trigger: 32351
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:07:29 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: Sonde Temperature Lons
+Schweregrad: Hoch
+Betriebsdaten: Up (1)
+Originale Problem-ID: 40775146
+"
+42,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-LO,"[PROBLEM: Hoch]
+Host: FW-LO (172.20.50.1)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775149, Trigger: 160402
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:07:19 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: FW-LO
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775149
+"
+43,Nicht erreichbar per ICMP-Ping: PROBLEM für FW-PA,"[PROBLEM: Hoch]
+Host: FW-PA (172.20.30.1)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775339, Trigger: 160444
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:10:16 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: FW-PA
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775339
+"
+44,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-PA-E01-001,"[PROBLEM: Hoch]
+Host: IDRAC-SRP-PA-E01-001 (172.20.31.11)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775343, Trigger: 172238
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:10:18 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: IDRAC-SRP-PA-E01-001
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775343
+"
+45,Nicht erreichbar per ICMP-Ping: PROBLEM für IDRAC-SRP-PA-E01-002,"[PROBLEM: Hoch]
+Host: IDRAC-SRP-PA-E01-002 (172.20.31.12)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40775370, Trigger: 172353
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:10:19 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: IDRAC-SRP-PA-E01-002
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40775370
+"
+46,VPN-Tunnel ausgefallen [ADM 74 -10.122.16.0/20]: PROBLEM für FW-DC,"[PROBLEM: Hoch]
+Host: FW-DC (192.168.200.1)
+Name: VPN-Tunnel ausgefallen [ADM 74 -10.122.16.0/20]
+Event: 40776549, Trigger: 170742
+Beschreibung: IPsec VPN-Tunnel Phase 2 ist ausgefallen, bitte überprüfen!
+Problem begann um 01:11:21 am 19.02.2024
+Problemname: VPN-Tunnel ausgefallen [ADM 74 -10.122.16.0/20]
+Host: FW-DC
+Schweregrad: Hoch
+Betriebsdaten: 1
+Originale Problem-ID: 40776549
+"
+47,Nicht erreichbar per ICMP-Ping: PROBLEM für 10.116.149.70,"[PROBLEM: Hoch]
+Host: 10.116.149.70 (10.116.149.70)
+Name: Nicht erreichbar per ICMP-Ping
+Event: 40779939, Trigger: 154898
+Beschreibung: Die letzten drei Versuche ergaben einen Timeout. Bitte überprüfen Sie die Geräteverbindung.
+Problem begann um 01:19:05 am 19.02.2024
+Problemname: Nicht erreichbar per ICMP-Ping
+Host: VISIO_CLICKSHARE_NANTES_GRASLIN
+Schweregrad: Hoch
+Betriebsdaten: Down (0)
+Originale Problem-ID: 40779939
+"
+48,Health Check State Failed to DC on member 3: PROBLEM für FW-PA,"[PROBLEM: Hoch]
+Host: FW-PA (172.20.30.1)
+Name: Health Check State Failed to DC on member 3
+Event: 40779659, Trigger: 160485
+Beschreibung: 
+Problem begann um 01:16:52 am 19.02.2024
+Problemname: Health Check State Failed to DC on member 3
+Host: FW-PA
+Schweregrad: Hoch
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40779659
+"
+49,Health Check State Failed to DC on member 4: PROBLEM für FW-PA,"[PROBLEM: Hoch]
+Host: FW-PA (172.20.30.1)
+Name: Health Check State Failed to DC on member 4
+Event: 40779660, Trigger: 160486
+Beschreibung: 
+Problem begann um 01:16:52 am 19.02.2024
+Problemname: Health Check State Failed to DC on member 4
+Host: FW-PA
+Schweregrad: Hoch
+Betriebsdaten: Status: Alarm (1)
+Originale Problem-ID: 40779660
+"

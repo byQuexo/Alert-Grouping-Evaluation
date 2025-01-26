@@ -1,11 +1,9 @@
-from distutils.command.clean import clean
 from typing import Optional
 
 from loguru import logger
 from qdrant_client import QdrantClient
-from qdrant_client.http.models import PointStruct, UpdateResult, PayloadFieldSchema, TextIndexParams, \
-    TokenizerType, QueryResponse, ScoredPoint, SearchParams, HnswConfigDiff, FieldCondition, MatchText, Filter, \
-    MatchValue
+from qdrant_client.http.models import PointStruct, UpdateResult, TextIndexParams, \
+    TokenizerType, QueryResponse, ScoredPoint, SearchParams, HnswConfigDiff
 from qdrant_client.models import VectorParams, Distance
 
 
@@ -45,8 +43,6 @@ class Qdrant:
 
             self.create_index(collection_name, "message")
 
-            logger.info(f"Creating collection: {collection_name} completed")
-
             return True
         except Exception as e:
             logger.error(f"Error creating collection: {e}")
@@ -74,7 +70,6 @@ class Qdrant:
             if "/" in collection_name and len(collection_name.split("/")) > 1:
                 collection_name = collection_name.split("/")[1]
 
-            logger.info(f"Checking collection: {collection_name}")
             return self.client.collection_exists(collection_name)
         except Exception as e:
             logger.error(f"Error checking collection: {e}")
@@ -91,6 +86,7 @@ class Qdrant:
                 vector=vector,
                 payload=payload
             )
+
         except Exception as e:
             logger.error(f"Error creating point: {e}")
             raise e
@@ -109,6 +105,7 @@ class Qdrant:
                 collection_name=collection_name,
                 points=[point]
             )
+
             logger.info(f"Inserting vectors into collection: {collection_name} completed, with status", upsert.status)
 
             return upsert.status
@@ -125,8 +122,6 @@ class Qdrant:
             if "/" in collection_name and len(collection_name.split("/")) > 1:
                 collection_name = collection_name.split("/")[1]
 
-            logger.info(f"Creating index for collection: {collection_name}")
-
             index: UpdateResult = self.client.create_payload_index(
                 collection_name=collection_name,
                 field_name=payload_flied,
@@ -138,7 +133,9 @@ class Qdrant:
                     lowercase=True,
                 ),
             )
+
             logger.info(f"Creating index for collection: {collection_name} completed, with status", index.status)
+
         except Exception as e:
             logger.error(f"Error creating index: {e}")
             raise e
@@ -182,11 +179,7 @@ class Qdrant:
             if "/" in collection_name and len(collection_name.split("/")) > 1:
                 collection_name = collection_name.split("/")[1]
 
-            logger.debug(f"Getting point from collection: {collection_name} with id: {sid}")
-
             point = self.client.query_points(collection_name=collection_name, query=sid, with_vectors=True, with_payload=True).points[0]
-
-            logger.info(f"Getting point from collection: {collection_name} completed")
 
             return point
         except Exception as e:

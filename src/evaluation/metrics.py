@@ -27,7 +27,12 @@ class Metrics:
 
         # Create label lists
         pred_labels = [pred_mapping.get(item, -1) for item in all_items]
+
+        logger.debug(f"Predicted labels: {pred_labels}")
+
         val_labels = [val_mapping.get(item, -1) for item in all_items]
+
+        logger.debug(f"Var labels: {val_labels}")
 
         # Calculate metrics
         ari = adjusted_rand_score(val_labels, pred_labels)
