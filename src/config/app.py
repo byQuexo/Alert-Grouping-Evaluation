@@ -6,6 +6,10 @@ class App:
         },
         "CACHE_DIR": "src/models/_cache",
         "QDRANT_COLLECTION_DIM": 768,
+        "DATA": {
+            "LANGUAGES": ["English", "German", "French", "Spanish"],
+            "VALIDATION": "validation",
+        }
     }
 
     @staticmethod

@@ -12,13 +12,12 @@ class BaseModel(ABC):
         self.service = service
         self.config = config
         self.name = None
-        self.model_path = None
         self.model = None
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
     def setup(self):
         try:
-            self.model = SentenceTransformer(model_name_or_path=self.name, cache_folder=config["CACHE_DIR"], trust_remote_code=True, device=self.device)
+            self.model = SentenceTransformer(model_name_or_path=self.name, cache_folder=self.config["CACHE_DIR"], trust_remote_code=True, device=self.device)
             logger.success(f"Model setup for {self.name} completed.")
         except Exception as e:
             logger.error(f"Error setting up model: {e}")

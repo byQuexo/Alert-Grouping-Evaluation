@@ -10,8 +10,8 @@ class ModelManager:
         """Initialize the model manager with available models."""
         self.models: Dict[str, BaseModel] = {}
         self.available_models = {
-            "gte-base": GteBase,
-            "gte-multilingual-base": GteMultilingualBase,
+            "Alibaba-NLP/gte-base-en-v1.5": GteBase,
+            "Alibaba-NLP/gte-multilingual-base": GteMultilingualBase,
         }
 
         self.service = service
