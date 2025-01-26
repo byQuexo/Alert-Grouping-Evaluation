@@ -148,10 +148,10 @@ class Service:
                     logger.debug(f"No similarity found for {current_id}")
                     self._create_new_group(current_id, key, language)
 
-                self.qdrant.insert_point(
-                    collection_name,
-                    self.qdrant.create_point(current_id, embedding, payload)
-                )
+                    self.qdrant.insert_point(
+                        collection_name,
+                        self.qdrant.create_point(current_id, embedding, payload)
+                    )
 
         except Exception as e:
             logger.error(e)

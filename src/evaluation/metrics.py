@@ -16,7 +16,6 @@ class Metrics:
         :param validation_groups: List of lists, where each inner list represents a true group of item IDs
         :return: Dictionary of evaluation metrics
         """
-        logger.debug(f"Predicted groups: {predicted_groups}, validation groups: {validation_groups}")
 
         # Create mappings of items to their group labels
         pred_mapping = self._create_item_to_group_mapping(predicted_groups)
@@ -27,12 +26,7 @@ class Metrics:
 
         # Create label lists
         pred_labels = [pred_mapping.get(item, -1) for item in all_items]
-
-        logger.debug(f"Predicted labels: {pred_labels}")
-
         val_labels = [val_mapping.get(item, -1) for item in all_items]
-
-        logger.debug(f"Var labels: {val_labels}")
 
         # Calculate metrics
         ari = adjusted_rand_score(val_labels, pred_labels)
