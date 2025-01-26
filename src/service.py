@@ -54,89 +54,203 @@ class Service:
             raise e
 
     def _process_initial_pass(self, df, model, collection_name, language, key):
-        for _, row in df.iterrows():
-            logger.debug("Starting to insert data..")
-            current_id = int(row['ID'])
-            payload = {
-                "id": current_id,
-                "subject": row['SUBJECT'],
-                "message": row['MESSAGE'],
-            }
+        try:
+            for _, row in df.iterrows():
+                logger.debug("Starting to insert data..")
+                current_id = int(row['ID'])
 
-            vector_string = f"{row['SUBJECT']}, {row['MESSAGE']}"
-            embedding = self.model_manager.create_embedding(model.name, vector_string)
+                # Create Point Structure
+                payload = {
+                    "id": current_id,
+                    "subject": row['SUBJECT'],
+                    "message": row['MESSAGE'],
+                }
 
-            similarity = self.qdrant.query_points(collection_name, embedding)
+                # Use the Subject and Message as a vector string
+                vector_string = f"{row['SUBJECT']}, {row['MESSAGE']}"
 
-            if similarity:
-                logger.info(
-                    f"Duplicate found for {current_id} with similarities: {', '.join([f'id: {point.id}, score: {point.score}' for point in similarity])}"
+                # Create an embedding
+                embedding = self.model_manager.create_embedding(model.name, vector_string)
+
+                # Check for similarity
+                similarity = self.qdrant.query_points(collection_name, embedding)
+
+                # Perform Grouping
+                if similarity:
+                    logger.info(
+                        f"Duplicate found for {current_id} with similarities: {', '.join([f'id: {point.id}, score: {point.score}' for point in similarity])}"
+                    )
+                    self._handle_similarity(current_id, similarity, key, language)
+                else:
+                    logger.debug(f"No similarity found for {current_id}")
+                    self._create_new_group(current_id, key, language)
+
+                self.qdrant.insert_point(
+                    collection_name,
+                    self.qdrant.create_point(current_id, embedding, payload)
                 )
-                self._handle_similarity(current_id, similarity, key, language)
-            else:
-                logger.debug(f"No similarity found for {current_id}")
-                self._create_new_group(current_id, key, language)
-
-            self.qdrant.insert_point(
-                collection_name,
-                self.qdrant.create_point(current_id, embedding, payload)
-            )
+        except Exception as e:
+            logger.error(e)
+            raise e
 
     def _create_new_group(self, current_id, key, language):
-        new_group_name = f"Group{self._get_next_group_number(key, language)}"
-        self.groups[key][language][new_group_name] = [current_id]
-        logger.debug(f"Created new group {new_group_name} for {current_id}")
+        """
+        Create a new group for the current id
+
+        Event: No similarity found for the current id
+
+        :param current_id:
+        :param key:
+        :param language:
+        :return:
+        """
+        try:
+            new_group_name = f"Group{self._get_next_group_number(key, language)}"
+            self.groups[key][language][new_group_name] = [current_id]
+            logger.debug(f"Created new group {new_group_name} for {current_id}")
+        except Exception as e:
+            logger.error(e)
+            raise
 
     def _handle_similarity(self, current_id, similarity, key, language):
-        target_groups = self._find_target_groups(similarity, key, language)
+        """
+        Handle similarity for the current id, when similarity is found. Group the current id with the similar ids.
 
-        if target_groups:
-            primary_group = target_groups[0]
-            self.groups[key][language][primary_group].append(current_id)
+        Event: Similarity found for the current id
 
-            if len(target_groups) > 1:
-                self._merge_groups(target_groups, key, language)
-            logger.debug(f"Added {current_id} to group {primary_group} under {key}/{language}")
-        else:
-            new_group_name = f"Group{self._get_next_group_number(key, language)}"
-            similar_ids = [int(p.id) if isinstance(p.id, str) else p.id for p in similarity]
-            self.groups[key][language][new_group_name] = [current_id] + similar_ids
-            logger.debug(f"Created new group {new_group_name} under {key}/{language}")
+        :param current_id:
+        :param similarity:
+        :param key:
+        :param language:
+        :return:
+        """
+        try:
+            target_groups = self._find_target_groups(similarity, key, language)
+
+            if target_groups:
+                primary_group = target_groups[0]
+                self.groups[key][language][primary_group].append(current_id)
+
+                if len(target_groups) > 1:
+                    self._merge_groups(target_groups, key, language)
+                logger.debug(f"Added {current_id} to group {primary_group} under {key}/{language}")
+            else:
+                new_group_name = f"Group{self._get_next_group_number(key, language)}"
+                similar_ids = [int(p.id) if isinstance(p.id, str) else p.id for p in similarity]
+                self.groups[key][language][new_group_name] = [current_id] + similar_ids
+                logger.debug(f"Created new group {new_group_name} under {key}/{language}")
+        except Exception as e:
+            logger.error(e)
+            raise e
 
     def _find_target_groups(self, similarity, key, language):
-        target_groups = []
-        for point in similarity:
-            point_id = int(point.id) if isinstance(point.id, str) else point.id
-            if key in self.groups and language in self.groups[key]:
-                for group_name, group_ids in self.groups[key][language].items():
-                    if point_id in group_ids and group_name not in target_groups:
-                        target_groups.append(group_name)
-        return target_groups
+        """
+
+        Find the target groups for the current id based on similarity with other ids.
+
+        Event: Similarity found for the current id
+
+        :param similarity:
+        :param key:
+        :param language:
+        :return:
+        """
+
+        try:
+            target_groups = []
+            for point in similarity:
+                point_id = int(point.id) if isinstance(point.id, str) else point.id
+                if key in self.groups and language in self.groups[key]:
+                    for group_name, group_ids in self.groups[key][language].items():
+                        if point_id in group_ids and group_name not in target_groups:
+                            target_groups.append(group_name)
+            return target_groups
+        except Exception as e:
+            logger.error(e)
+            raise e
+
 
     def _merge_groups(self, target_groups, key, language):
-        primary_group = target_groups[0]
-        for group_name in target_groups[1:]:
-            self.groups[key][language][primary_group].extend(
-                self.groups[key][language][group_name]
-            )
-            del self.groups[key][language][group_name]
-        logger.debug(f"Merged {len(target_groups)} groups into {primary_group}")
+
+        """
+
+        Merge the target groups into a single group for the current id based on similarity with other ids.
+
+        Event: Similarity found for the current id
+
+        :param target_groups:
+        :param key:
+        :param language:
+        :return:
+        """
+        try:
+            primary_group = target_groups[0]
+            for group_name in target_groups[1:]:
+                self.groups[key][language][primary_group].extend(
+                    self.groups[key][language][group_name]
+                )
+                del self.groups[key][language][group_name]
+            logger.debug(f"Merged {len(target_groups)} groups into {primary_group}")
+        except Exception as e:
+            logger.error(e)
+            raise e
+
+
 
     def _create_temp_group(self, current_id, key, language):
-        temp_group_name = f"TempGroup{self._get_next_group_number(key, language)}"
-        self.groups[key][language][temp_group_name] = [current_id]
-        logger.debug(f"Created temporary group {temp_group_name} for {current_id}")
+        """
+        Create a temporary group for the current id
+
+        Event: Similarity found for the current id
+
+        :param current_id:
+        :param key:
+        :param language:
+        :return:
+        """
+        try:
+            temp_group_name = f"TempGroup{self._get_next_group_number(key, language)}"
+            self.groups[key][language][temp_group_name] = [current_id]
+            logger.debug(f"Created temporary group {temp_group_name} for {current_id}")
+        except Exception as e:
+            logger.error(e)
+            raise e
+
+
 
     def _process_final_pass(self, model, collection_name, language, key):
-        singletons = [group_id for group_ids in self.groups[key][language].values() if len(group_ids) == 1 for group_id
-                      in group_ids]
-        for sid in singletons:
-            vector = self.qdrant.get_point(collection_name, sid)
-            similarity = self.qdrant.query_points(collection_name, vector.vector, score_threshold=0.8)
-            if similarity:
-                self._handle_similarity(sid, similarity, key, language)
+        """
+        Process the final pass for the current id
+
+        Event: No similarity found for the current id
+
+        :param model:
+        :param collection_name:
+        :param language:
+        :param key:
+        :return:
+        """
+
+        try:
+            singletons = [group_id for group_ids in self.groups[key][language].values() if len(group_ids) == 1 for
+                          group_id
+                          in group_ids]
+            for sid in singletons:
+                vector = self.qdrant.get_point(collection_name, sid)
+                similarity = self.qdrant.query_points(collection_name, vector.vector, score_threshold=0.8)
+                if similarity:
+                    self._handle_similarity(sid, similarity, key, language)
+        except Exception as e:
+            logger.error(e)
+            raise e
+
+
 
     def cleanup(self):
+        """
+        Clean up the service
+        :return:
+        """
         try:
             logger.info("Cleaning up..")
             for language, df in self.data_manager.data.items():
@@ -161,7 +275,6 @@ class Service:
                 for i, (_, group_ids) in enumerate(sorted(self.groups[key][language].items()), 1):
                     final_groups[f"Group{i}"] = sorted(set(group_ids))
                 self.groups[key][language] = final_groups
-
 
     def init(self):
         try:
