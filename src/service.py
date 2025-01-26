@@ -18,7 +18,7 @@ class Service:
         self.model_manager = ModelManager(self, self.config)
         self.data_manager = DataManager(self, self.config)
         self.groups: Dict[str, Dict[str, Dict[str, List[int]]]] = defaultdict(lambda: defaultdict(dict))
-        self.metrics = {}
+        self.metrics: Dict[str, dict] = defaultdict(lambda: defaultdict(dict))
 
     def _get_next_group_number(self, key, language):
         return len(self.groups[key][language]) + 1
@@ -43,8 +43,7 @@ class Service:
                     if "/" in key and len(key.split("/")) > 1:
                         key = key.split("/")[1]
 
-                    create_collection_status = self.qdrant.create_collection(f"{key}-{language}")
-                    logger.info(f"DONE! {create_collection_status}")
+                    self.qdrant.create_collection(f"{key}-{language}")
 
                     self._process_initial_pass(df, value, f"{key}-{language}", language, key)
 
@@ -54,16 +53,43 @@ class Service:
 
                     self._create_metric(key, language)
 
-                    logger.success(f"{self.groups}")
-
-
-            logger.success(f"{self.metrics}")
+            self._pretty_print_metrics()
 
         except Exception as e:
             logger.error(e)
             raise e
 
+    def _pretty_print_metrics(self):
+        logger.debug(f"{len(self.metrics)}, {self.metrics}")
 
+        for model, languages in self.metrics.items():
+            for language, metrics in languages.items():
+                logger.info(f"Metrics for {model} in {language}:")
+                for key, value in metrics.items():
+                    logger.info(f"{key}: {value}")
+
+    def _create_metric(self, model, language):
+        try:
+            groups = []
+            validation = []
+
+            metric = Metrics(language, model)
+
+            for _, row in self.data_manager.validation_data.iterrows():
+                validation.append([int(id) for id in row['IDs'].replace("'", "").split(",")])
+
+            # Convert the group ids to a list and add to the groups list
+            for group_ids in self.groups[model][language].values():
+                groups.append(group_ids)
+
+            if model not in self.metrics:
+                self.metrics[model] = {}
+            self.metrics[model][language] = metric.create_metrics(groups, validation)
+
+            logger.debug(f"Metrics: {self.metrics}")
+        except Exception as e:
+            logger.error(e)
+            raise e
 
     def _process_initial_pass(self, df, model, collection_name, language, key):
         try:
@@ -105,29 +131,6 @@ class Service:
         except Exception as e:
             logger.error(e)
             raise e
-
-    def _create_metric(self, model, language):
-        try:
-            groups = []
-            validation = []
-
-            for _, row in self.data_manager.validation_data.iterrows():
-                validation.append([int(id) for id in row['IDs'].replace("'", "").split(",")])
-
-            metric = Metrics(language, model)
-
-            self.metrics[model] = {}
-            self.metrics[model][language] = {}
-
-            self.metrics[model][language] = metric.create_metrics(groups, validation)
-
-            logger.debug(f"Metrics: {self.metrics}")
-
-
-        except Exception as e:
-            logger.error(e)
-            raise e
-
 
     def _create_new_group(self, current_id, key, language):
         """
