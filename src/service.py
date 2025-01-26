@@ -1,6 +1,11 @@
 from typing import Dict, List
 from collections import defaultdict
+
+import pandas as pd
+from sympy.strategies.branch import debug
+
 from src.data import DataManager
+from src.evaluation.metrics import Metrics
 from src.models import *
 from src.clients import Qdrant
 from src.config import App
@@ -13,6 +18,7 @@ class Service:
         self.model_manager = ModelManager(self, self.config)
         self.data_manager = DataManager(self, self.config)
         self.groups: Dict[str, Dict[str, Dict[str, List[int]]]] = defaultdict(lambda: defaultdict(dict))
+        self.metrics = {}
 
     def _get_next_group_number(self, key, language):
         return len(self.groups[key][language]) + 1
@@ -46,11 +52,18 @@ class Service:
 
                     self._finalize_groups()
 
+                    self._create_metric(key, language)
+
                     logger.success(f"{self.groups}")
+
+
+            logger.success(f"{self.metrics}")
 
         except Exception as e:
             logger.error(e)
             raise e
+
+
 
     def _process_initial_pass(self, df, model, collection_name, language, key):
         try:
@@ -88,9 +101,33 @@ class Service:
                     collection_name,
                     self.qdrant.create_point(current_id, embedding, payload)
                 )
+
         except Exception as e:
             logger.error(e)
             raise e
+
+    def _create_metric(self, model, language):
+        try:
+            groups = []
+            validation = []
+
+            for _, row in self.data_manager.validation_data.iterrows():
+                validation.append([int(id) for id in row['IDs'].replace("'", "").split(",")])
+
+            metric = Metrics(language, model)
+
+            self.metrics[model] = {}
+            self.metrics[model][language] = {}
+
+            self.metrics[model][language] = metric.create_metrics(groups, validation)
+
+            logger.debug(f"Metrics: {self.metrics}")
+
+
+        except Exception as e:
+            logger.error(e)
+            raise e
+
 
     def _create_new_group(self, current_id, key, language):
         """
