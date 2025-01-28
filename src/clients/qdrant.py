@@ -12,12 +12,11 @@ class Qdrant:
         self.service  = service
         self.config = config
         self.client = QdrantClient(
-            host=self.config['QDRANT']['HOST'],
-            port=self.config['QDRANT']['PORT'],
+            url=self.config['QDRANT']['URL']
         )
 
 
-    def create_collection(self, collection_name) -> bool:
+    def create_collection(self, collection_name, size) -> bool:
         try:
 
             assert collection_name, "Collection name is required"
@@ -28,7 +27,7 @@ class Qdrant:
             self.client.create_collection(
                 collection_name=collection_name,
                 vectors_config=VectorParams(
-                    size=self.config['QDRANT_COLLECTION_DIM'],
+                    size=size,
                     distance=Distance.COSINE,
                     on_disk=True,
                 ),
