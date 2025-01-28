@@ -1,16 +1,15 @@
 from typing import Dict, List
 from collections import defaultdict
 
-import pandas as pd
-from sympy.strategies.branch import debug
-
 from src.data import DataManager
 from src.evaluation.metrics import Metrics
 from src.evaluation.metrics_display import MetricsDisplay
-from src.models import *
 from src.clients import Qdrant
 from src.config import App
 from loguru import logger
+
+from src.models.model_manager import ModelManager
+
 
 class Service:
     def __init__(self):
@@ -44,7 +43,7 @@ class Service:
                     if "/" in key and len(key.split("/")) > 1:
                         key = key.split("/")[1]
 
-                    self.qdrant.create_collection(f"{key}-{language}")
+                    self.qdrant.create_collection(f"{key}-{language}", value.dim)
 
                     self._process_initial_pass(df, value, f"{key}-{language}", language, key)
 
