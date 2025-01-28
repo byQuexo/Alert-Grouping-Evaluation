@@ -14,6 +14,7 @@ class BaseModel(ABC):
         self.name = None
         self.model = None
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.dim = None
 
     def setup(self):
         try:

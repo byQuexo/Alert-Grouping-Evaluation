@@ -1,8 +1,11 @@
-from src.models import GteBase
-from src.models import GteMultilingualBase
-from src.models import BaseModel
-
+from typing import Dict
 from loguru import logger
+
+from src.models.base_model import BaseModel
+from src.models.cde_small_v2 import CDESmallV2
+from src.models.gte_base import GteBase
+from src.models.gte_multilingual_base import GteMultilingualBase
+from src.models.multilingual_e5_base import MultilingualE5Base
 
 
 class ModelManager:
@@ -12,6 +15,8 @@ class ModelManager:
         self.available_models = {
             "Alibaba-NLP/gte-base-en-v1.5": GteBase,
             "Alibaba-NLP/gte-multilingual-base": GteMultilingualBase,
+            "intfloat/multilingual-e5-base": MultilingualE5Base,
+            "jxm/cde-small-v2": CDESmallV2,
         }
 
         self.service = service

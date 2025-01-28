@@ -1,9 +1,8 @@
 from src.models.base_model import BaseModel
 
 
-class GteBase(BaseModel):
-
+class CDESmallV2(BaseModel):
     def __init__(self, service, config):
         super().__init__(service, config)
-        self.name = "Alibaba-NLP/gte-base-en-v1.5"
+        self.name = 'jxm/cde-small-v2'
         self.dim = 768

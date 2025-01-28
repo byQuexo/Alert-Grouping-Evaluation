@@ -1,9 +1,11 @@
 from src.models.base_model import BaseModel
 
 
-class GteBase(BaseModel):
+class MultilingualE5Base(BaseModel):
 
     def __init__(self, service, config):
         super().__init__(service, config)
-        self.name = "Alibaba-NLP/gte-base-en-v1.5"
+        self.name = "intfloat/multilingual-e5-base"
         self.dim = 768
+
+
