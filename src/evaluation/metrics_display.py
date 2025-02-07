@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
-import numpy as np
+
+from loguru import logger
 
 
 class MetricsDisplay:
@@ -73,6 +74,9 @@ class MetricsDisplay:
                 )
 
         overall_metrics = []
+
+        logger.info(f"Metrics data: {self.metrics_data}")
+
         for model_name, model_data in self.metrics_data.items():
             metrics = self.calculate_overall_metrics(model_data)
             overall_metrics.append((model_name, metrics))

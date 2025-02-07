@@ -55,8 +55,6 @@ class Service:
 
             self._pretty_print_metrics()
 
-            self._create_overall_metric()
-
             self._show_overall_metrics()
 
 
@@ -75,22 +73,8 @@ class Service:
                     logger.info(f"{key}: {value}")
 
 
-    def _create_overall_metric(self):
-        try:
-            for key, value in self.metrics.items():
-                self.metrics[key]["overall"] = Metrics.create_overall_metrics(key, self.metrics[key])
-
-        except Exception as e:
-            logger.error(e)
-
-
     def _show_overall_metrics(self):
-        overall_metrics_list = []
-
-        for key, value in self.metrics.items():
-            overall_metrics_list.append(value["overall"])
-
-        metrics_display = MetricsDisplay(overall_metrics_list)
+        metrics_display = MetricsDisplay(self.metrics)
         metrics_display.display_metrics()
 
     def _create_metric(self, model, language):
