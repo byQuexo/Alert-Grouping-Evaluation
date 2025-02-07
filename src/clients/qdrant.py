@@ -170,6 +170,14 @@ class Qdrant:
             logger.error(f"Error searching for similar vectors: {e}")
             raise e
 
+    def health_check(self):
+        try:
+            logger.info("Checking health of the service")
+            self.client.get_collections()
+        except Exception as e:
+            raise e
+
+
     def get_point(self, collection_name, sid):
         try:
             assert collection_name, "Collection name is required"

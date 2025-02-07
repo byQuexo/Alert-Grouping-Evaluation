@@ -341,6 +341,7 @@ class Service:
 
     def init(self):
         try:
+            self.qdrant.health_check()
             self.model_manager.setup()
             logger.success("Setups for Models successfully completed.")
         except Exception as e:
