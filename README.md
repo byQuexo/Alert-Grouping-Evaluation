@@ -13,7 +13,7 @@
 
 ## Overview
 
-This repository evaluates the performance of various embedding models for alert grouping based on Prometheus alerts in multiple languages (German, English, Spanish, and French). It aims to compare monolingual and multilingual embedding models in their ability to group similar alerts across languages.
+This project evaluates the performance of various embedding models for alert grouping based on Prometheus alerts in multiple languages (German, English, Spanish, and French). It aims to compare monolingual and multilingual embedding models in their ability to group similar alerts across languages.
 
 ## Key Features
 
