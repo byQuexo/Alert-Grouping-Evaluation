@@ -1,0 +1,7 @@
+loguru==0.7.3
+numpy==2.2.3
+pandas==2.2.3
+qdrant_client==1.13.2
+scikit_learn==1.6.1
+sentence_transformers==3.4.1
+torch==2.6.0
