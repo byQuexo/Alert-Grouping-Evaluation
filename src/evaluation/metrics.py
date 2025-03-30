@@ -79,6 +79,13 @@ class Metrics:
         false_positives = np.sum(np.sum(contingency, axis=0) * (np.sum(contingency, axis=0) - 1)) / 2 - true_positives
         false_negatives = np.sum(np.sum(contingency, axis=1) * (np.sum(contingency, axis=1) - 1)) / 2 - true_positives
 
+        # Special case: If there are no pairs (all groups have single items) and contingency is diagonal
+        # (perfect clustering), return precision=recall=1.0
+        if (true_positives == 0 and false_positives == 0 and false_negatives == 0 and
+                np.all(np.diag(contingency) == np.sum(contingency, axis=1)) and
+                np.all(np.diag(contingency) == np.sum(contingency, axis=0))):
+            return 1.0, 1.0
+
         precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0
         recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
 
