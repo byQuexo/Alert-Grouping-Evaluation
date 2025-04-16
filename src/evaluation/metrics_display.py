@@ -1,12 +1,18 @@
 import tkinter as tk
 from tkinter import ttk
-
 from loguru import logger
-
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend for saving images
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
 
 class MetricsDisplay:
     def __init__(self, metrics_data):
         self.metrics_data = metrics_data
+        self.output_dir = ".output"
+        os.makedirs(self.output_dir, exist_ok=True)
         self.window = tk.Tk()
         self.window.title("Metrics Comparison Matrix")
         self.window.geometry("1200x600")
@@ -115,6 +121,9 @@ class MetricsDisplay:
         self.tree.tag_configure('even', background='#ffffff')
         self.apply_row_colors()
 
+        # --- Generate and save graphs after leaderboard is built ---
+        self.save_all_graphs()
+
         self.tree.pack(fill=tk.BOTH, expand=True)
         self.window.mainloop()
 
@@ -122,3 +131,52 @@ class MetricsDisplay:
         for i, item in enumerate(self.tree.get_children("")):
             if self.tree.parent(item) == "":
                 self.tree.item(item, tags=('odd' if i % 2 else 'even',))
+
+    # --------- Graph Generation Section ---------
+    def save_all_graphs(self):
+        df = self._metrics_to_dataframe()
+        self.save_heatmap(df, "f1_score")
+        self.save_heatmap(df, "adjusted_rand_index")
+        self.save_bar_chart(df, "f1_score")
+        self.save_bar_chart(df, "adjusted_rand_index")
+        self.save_group_count_chart(df)
+
+    def _metrics_to_dataframe(self):
+        rows = []
+        for model, lang_data in self.metrics_data.items():
+            for lang, metrics in lang_data.items():
+                row = {
+                    'Model': model,
+                    'Language': lang,
+                    **metrics
+                }
+                rows.append(row)
+        return pd.DataFrame(rows)
+
+    def save_heatmap(self, df, metric):
+        pivot = df.pivot(index="Model", columns="Language", values=metric)
+        plt.figure(figsize=(8, 6))
+        sns.heatmap(pivot, annot=True, cmap="viridis", fmt=".2f")
+        plt.title(f"{metric.replace('_', ' ').title()} Heatmap")
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, f"{metric}_heatmap.png"))
+        plt.close()
+
+    def save_bar_chart(self, df, metric):
+        plt.figure(figsize=(10, 6))
+        sns.barplot(data=df, x="Model", y=metric, hue="Language")
+        plt.title(f"{metric.replace('_', ' ').title()} by Model and Language")
+        plt.ylabel(metric.replace('_', ' ').title())
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, f"{metric}_barplot.png"))
+        plt.close()
+
+    def save_group_count_chart(self, df):
+        if "predicted_groups" in df.columns:
+            plt.figure(figsize=(10, 6))
+            sns.barplot(data=df, x="Model", y="predicted_groups", hue="Language")
+            plt.title("Number of Predicted Groups by Model and Language")
+            plt.ylabel("Number of Groups")
+            plt.tight_layout()
+            plt.savefig(os.path.join(self.output_dir, "group_count_barplot.png"))
+            plt.close()
