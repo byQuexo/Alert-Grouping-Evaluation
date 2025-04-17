@@ -132,7 +132,6 @@ class MetricsDisplay:
             if self.tree.parent(item) == "":
                 self.tree.item(item, tags=('odd' if i % 2 else 'even',))
 
-    # --------- Graph Generation Section ---------
     def save_all_graphs(self):
         df = self._metrics_to_dataframe()
         self.save_heatmap(df, "f1_score")
@@ -140,6 +139,8 @@ class MetricsDisplay:
         self.save_bar_chart(df, "f1_score")
         self.save_bar_chart(df, "adjusted_rand_index")
         self.save_group_count_chart(df)
+        # Add the new academic table graph
+        self.save_metrics_histogram()
 
     def _metrics_to_dataframe(self):
         rows = []
@@ -180,3 +181,108 @@ class MetricsDisplay:
             plt.tight_layout()
             plt.savefig(os.path.join(self.output_dir, "group_count_barplot.png"))
             plt.close()
+
+    def save_metrics_histogram(self):
+        """
+        Creates and saves histograms of key metrics across all models.
+        This visualization is suitable for academic papers to show the distribution of metrics.
+        """
+        logger.info("Generating metrics histograms...")
+        df = self._metrics_to_dataframe()
+
+        # Key metrics to visualize
+        metrics_to_analyze = [
+            "adjusted_rand_index", "normalized_mutual_info", "adjusted_mutual_info",
+            "v_measure", "pairwise_precision", "pairwise_recall", "f1_score"
+        ]
+
+        # Create a figure with subplots - 2 rows, 4 columns (7 metrics total)
+        fig, axes = plt.subplots(2, 4, figsize=(16, 10))
+        axes = axes.flatten()
+
+        # Create histograms for each metric
+        for i, metric in enumerate(metrics_to_analyze):
+            if i < len(axes):  # Make sure we don't exceed the number of subplots
+                ax = axes[i]
+
+                # Create grouped histogram by model
+                for model_name in df['Model'].unique():
+                    model_data = df[df['Model'] == model_name]
+                    ax.hist(model_data[metric], alpha=0.7, label=model_name, bins=10)
+
+                # Customize the subplot
+                ax.set_title(f'{metric.replace("_", " ").title()}', fontsize=12)
+                ax.set_xlabel('Score', fontsize=10)
+                ax.set_ylabel('Frequency', fontsize=10)
+                ax.grid(True, linestyle='--', alpha=0.7)
+
+                # Add mean lines for each model
+                for model_name in df['Model'].unique():
+                    model_data = df[df['Model'] == model_name]
+                    mean_value = model_data[metric].mean()
+                    ax.axvline(x=mean_value, linestyle='--',
+                               label=f'{model_name} mean: {mean_value:.3f}')
+
+        # Hide the unused subplot if we have an odd number of metrics
+        if len(metrics_to_analyze) < len(axes):
+            axes[-1].axis('off')
+
+        # Add overall title
+        fig.suptitle('Distribution of Evaluation Metrics Across Models', fontsize=16, fontweight='bold')
+
+        # Add a single legend for all subplots at the bottom
+        handles, labels = [], []
+        for ax in axes:
+            if ax.get_legend_handles_labels()[0]:  # Check if the axis has legend entries
+                h, l = ax.get_legend_handles_labels()
+                handles.extend(h)
+                labels.extend(l)
+
+        # Remove duplicate entries in the legend
+        by_label = dict(zip(labels, handles))
+        fig.legend(by_label.values(), by_label.keys(),
+                   loc='lower center', ncol=min(5, len(by_label)),
+                   bbox_to_anchor=(0.5, 0.02), fontsize=10)
+
+        # Adjust layout
+        plt.tight_layout()
+        plt.subplots_adjust(bottom=0.15, top=0.9)  # Make room for the legend and title
+
+        # Save the figure
+        histogram_path = os.path.join(self.output_dir, "metrics_histogram.png")
+        plt.savefig(histogram_path, dpi=300, bbox_inches='tight')
+        plt.close()
+
+        logger.info(f"Metrics histograms saved to {histogram_path}")
+
+        # Create an additional figure showing side-by-side comparison of F1 scores
+        plt.figure(figsize=(12, 8))
+
+        # Create a grouped bar chart for F1 scores by model and language
+        ax = sns.barplot(data=df, x='Model', y='f1_score', hue='Language')
+
+        # Customize the plot
+        plt.title('F1 Score Comparison by Model and Language', fontsize=14, fontweight='bold')
+        plt.xlabel('Model', fontsize=12)
+        plt.ylabel('F1 Score', fontsize=12)
+        plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+
+        # Rotate x-axis labels for better readability
+        plt.xticks(rotation=45, ha='right')
+
+        # Add a horizontal line for the overall average F1 score
+        avg_f1 = df['f1_score'].mean()
+        plt.axhline(y=avg_f1, color='red', linestyle='--',
+                    label=f'Overall Average: {avg_f1:.3f}')
+
+        # Enhance the legend
+        plt.legend(title='Language', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+        plt.tight_layout()
+
+        # Save the figure
+        f1_path = os.path.join(self.output_dir, "f1_score_comparison.png")
+        plt.savefig(f1_path, dpi=300, bbox_inches='tight')
+        plt.close()
+
+        logger.info(f"F1 score comparison saved to {f1_path}")
