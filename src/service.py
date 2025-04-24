@@ -21,6 +21,10 @@ class Service:
         self.metrics: Dict[str, dict] = defaultdict(lambda: defaultdict(dict))
 
     def _get_next_group_number(self, key, language):
+        if key not in self.groups:
+            self.groups[key] = {}
+        if language not in self.groups[key]:
+            self.groups[key][language] = {}
         return len(self.groups[key][language]) + 1
 
     def _run(self):
@@ -152,6 +156,11 @@ class Service:
         :return:
         """
         try:
+            if key not in self.groups:
+                self.groups[key] = {}
+            if language not in self.groups[key]:
+                self.groups[key][language] = {}
+
             new_group_name = f"Group{self._get_next_group_number(key, language)}"
             self.groups[key][language][new_group_name] = [current_id]
             logger.debug(f"Created new group {new_group_name} for {current_id}")

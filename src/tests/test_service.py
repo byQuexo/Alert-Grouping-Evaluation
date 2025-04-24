@@ -33,6 +33,12 @@ def test_service_initialization():
 
 def test_create_new_group(mock_integrated_service):
     """Test creating a new alert group."""
+    # Initialize the nested dictionary structure
+    mock_integrated_service.groups = {
+        "mock_model": {
+            "English": {}
+        }
+    }
     mock_integrated_service._create_new_group(1, "mock_model", "English")
     assert "mock_model" in mock_integrated_service.groups
     assert "English" in mock_integrated_service.groups["mock_model"]
