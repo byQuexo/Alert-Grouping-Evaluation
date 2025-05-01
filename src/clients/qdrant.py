@@ -12,9 +12,9 @@ class Qdrant:
         self.service  = service
         self.config = config
         self.client = QdrantClient(
-            url=self.config['QDRANT']['URL']
+            url=self.config['QDRANT']['URL'],
+            timeout=60,
         )
-
 
     def create_collection(self, collection_name, size) -> bool:
         try:
